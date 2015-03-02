@@ -18,6 +18,9 @@
 		E67160EC1AA0E063007A970D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67160EB1AA0E063007A970D /* MapKit.framework */; };
 		E67160EE1AA0E078007A970D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67160ED1AA0E078007A970D /* CoreData.framework */; };
 		E6A7D3591AA4EB6E00F3F543 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6A7D35B1AA4EB6E00F3F543 /* Localizable.strings */; };
+		E6A7D35F1AA4F79F00F3F543 /* ControleDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A7D35E1AA4F79F00F3F543 /* ControleDB.m */; };
+		E6A7D3611AA4F88E00F3F543 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A7D3601AA4F88E00F3F543 /* libsqlite3.dylib */; };
+		E6A7D3631AA5027500F3F543 /* dbsp.SQLite in Resources */ = {isa = PBXBuildFile; fileRef = E6A7D3621AA5027500F3F543 /* dbsp.SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		E6A7D3581AA4EB6800F3F543 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E6A7D35A1AA4EB6E00F3F543 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E6A7D35C1AA4EB6F00F3F543 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E6A7D35D1AA4F79F00F3F543 /* ControleDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleDB.h; sourceTree = "<group>"; };
+		E6A7D35E1AA4F79F00F3F543 /* ControleDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControleDB.m; sourceTree = "<group>"; };
+		E6A7D3601AA4F88E00F3F543 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		E6A7D3621AA5027500F3F543 /* dbsp.SQLite */ = {isa = PBXFileReference; lastKnownFileType = file; name = dbsp.SQLite; path = ../../../../db/dbsp.SQLite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A7D3611AA4F88E00F3F543 /* libsqlite3.dylib in Frameworks */,
 				104BD5A81AA4EF7A00FE79F8 /* Social.framework in Frameworks */,
 				E67160EE1AA0E078007A970D /* CoreData.framework in Frameworks */,
 				E67160EC1AA0E063007A970D /* MapKit.framework in Frameworks */,
@@ -77,6 +85,7 @@
 		E67160B91AA0DFA9007A970D = {
 			isa = PBXGroup;
 			children = (
+				E6A7D3601AA4F88E00F3F543 /* libsqlite3.dylib */,
 				104BD5A71AA4EF7A00FE79F8 /* Social.framework */,
 				E67160ED1AA0E078007A970D /* CoreData.framework */,
 				E67160EB1AA0E063007A970D /* MapKit.framework */,
@@ -98,10 +107,13 @@
 		E67160C41AA0DFAA007A970D /* GuiaSp */ = {
 			isa = PBXGroup;
 			children = (
+				E6A7D3621AA5027500F3F543 /* dbsp.SQLite */,
 				E67160C91AA0DFAA007A970D /* AppDelegate.h */,
 				E67160CA1AA0DFAA007A970D /* AppDelegate.m */,
 				E67160CC1AA0DFAA007A970D /* mapView.h */,
 				E67160CD1AA0DFAA007A970D /* mapView.m */,
+				E6A7D35D1AA4F79F00F3F543 /* ControleDB.h */,
+				E6A7D35E1AA4F79F00F3F543 /* ControleDB.m */,
 				E67160CF1AA0DFAA007A970D /* Main.storyboard */,
 				E67160D21AA0DFAA007A970D /* Images.xcassets */,
 				E67160D41AA0DFAA007A970D /* LaunchScreen.xib */,
@@ -220,6 +232,7 @@
 			files = (
 				E67160D11AA0DFAA007A970D /* Main.storyboard in Resources */,
 				E6A7D3591AA4EB6E00F3F543 /* Localizable.strings in Resources */,
+				E6A7D3631AA5027500F3F543 /* dbsp.SQLite in Resources */,
 				E67160D61AA0DFAA007A970D /* LaunchScreen.xib in Resources */,
 				E67160D31AA0DFAA007A970D /* Images.xcassets in Resources */,
 			);
@@ -242,6 +255,7 @@
 				E67160CE1AA0DFAA007A970D /* mapView.m in Sources */,
 				E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */,
 				E67160C81AA0DFAA007A970D /* main.m in Sources */,
+				E6A7D35F1AA4F79F00F3F543 /* ControleDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
