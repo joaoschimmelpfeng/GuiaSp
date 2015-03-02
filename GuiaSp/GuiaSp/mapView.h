@@ -11,7 +11,6 @@
 
 @interface mapView : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mapa;
-@property (weak, nonatomic) IBOutlet UINavigationItem *botaoVoltar;
 - (IBAction)Opcoes:(id)sender;
 
 

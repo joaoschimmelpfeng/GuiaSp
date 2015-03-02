@@ -13,15 +13,15 @@
 @end
 
 @implementation mapView
-@synthesize mapa,botaoVoltar;
+@synthesize mapa;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    botaoVoltar.title = NSLocalizedString(@"titulo", nil);
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
