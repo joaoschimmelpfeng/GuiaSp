@@ -18,8 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    botaoVoltar.title = NSLocalizedString(@"SP Guide",nil);
-    NSLog(NSLocalizedString(@"SP Guia",nil));
+    []
 }
 
 - (void)didReceiveMemoryWarning {

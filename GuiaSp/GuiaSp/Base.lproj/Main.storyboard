@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -33,6 +32,9 @@
                                     <segment title="Satelite"/>
                                     <segment title="Híbrido"/>
                                 </segments>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="10" y="712" width="384" height="29"/>
+                                </variation>
                                 <connections>
                                     <action selector="Opcoes:" destination="BYZ-38-t0r" eventType="valueChanged" id="HO5-W4-VBO"/>
                                 </connections>
@@ -61,16 +63,16 @@
                                 <exclude reference="2oi-AP-gyN"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="xMp-cQ-mX4"/>
                                 <exclude reference="1Bi-jm-XFo"/>
                                 <exclude reference="fxf-5T-fVb"/>
                                 <exclude reference="q6b-Df-TYb"/>
-                                <exclude reference="W6p-kO-ABa"/>
-                                <exclude reference="blQ-cR-4HZ"/>
-                                <exclude reference="chH-qh-tFd"/>
                                 <exclude reference="PIX-NO-0ww"/>
                                 <exclude reference="fZn-em-2hQ"/>
                                 <exclude reference="x5V-Jl-FT4"/>
+                                <exclude reference="W6p-kO-ABa"/>
+                                <exclude reference="blQ-cR-4HZ"/>
+                                <exclude reference="chH-qh-tFd"/>
+                                <exclude reference="xMp-cQ-mX4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -80,16 +82,16 @@
                                 <include reference="2oi-AP-gyN"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="xMp-cQ-mX4"/>
                                 <include reference="1Bi-jm-XFo"/>
                                 <include reference="fxf-5T-fVb"/>
                                 <include reference="q6b-Df-TYb"/>
-                                <include reference="W6p-kO-ABa"/>
-                                <include reference="blQ-cR-4HZ"/>
-                                <include reference="chH-qh-tFd"/>
                                 <include reference="PIX-NO-0ww"/>
                                 <include reference="fZn-em-2hQ"/>
                                 <include reference="x5V-Jl-FT4"/>
+                                <include reference="W6p-kO-ABa"/>
+                                <include reference="blQ-cR-4HZ"/>
+                                <include reference="chH-qh-tFd"/>
+                                <include reference="xMp-cQ-mX4"/>
                             </mask>
                         </variation>
                     </view>

@@ -16,7 +16,6 @@
 		E67160E21AA0DFAA007A970D /* GuiaSpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160E11AA0DFAA007A970D /* GuiaSpTests.m */; };
 		E67160EC1AA0E063007A970D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67160EB1AA0E063007A970D /* MapKit.framework */; };
 		E67160EE1AA0E078007A970D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67160ED1AA0E078007A970D /* CoreData.framework */; };
-		E6A7D3421AA4D57000F3F543 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6A7D3441AA4D57000F3F543 /* Localization.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +44,6 @@
 		E67160E11AA0DFAA007A970D /* GuiaSpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuiaSpTests.m; sourceTree = "<group>"; };
 		E67160EB1AA0E063007A970D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E67160ED1AA0E078007A970D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E6A7D3401AA4D4E200F3F543 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
-		E6A7D3411AA4D4E200F3F543 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		E6A7D3431AA4D57000F3F543 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localization.strings; sourceTree = "<group>"; };
-		E6A7D3451AA4D57700F3F543 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localization.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +96,6 @@
 				E67160CF1AA0DFAA007A970D /* Main.storyboard */,
 				E67160D21AA0DFAA007A970D /* Images.xcassets */,
 				E67160D41AA0DFAA007A970D /* LaunchScreen.xib */,
-				E6A7D3441AA4D57000F3F543 /* Localization.strings */,
 				E67160C51AA0DFAA007A970D /* Supporting Files */,
 			);
 			path = GuiaSp;
@@ -196,7 +190,6 @@
 			knownRegions = (
 				en,
 				Base,
-				pt,
 			);
 			mainGroup = E67160B91AA0DFA9007A970D;
 			productRefGroup = E67160C31AA0DFAA007A970D /* Products */;
@@ -214,7 +207,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6A7D3421AA4D57000F3F543 /* Localization.strings in Resources */,
 				E67160D11AA0DFAA007A970D /* Main.storyboard in Resources */,
 				E67160D61AA0DFAA007A970D /* LaunchScreen.xib in Resources */,
 				E67160D31AA0DFAA007A970D /* Images.xcassets in Resources */,
@@ -264,7 +256,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E67160D01AA0DFAA007A970D /* Base */,
-				E6A7D3401AA4D4E200F3F543 /* pt */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -273,19 +264,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E67160D51AA0DFAA007A970D /* Base */,
-				E6A7D3411AA4D4E200F3F543 /* pt */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		E6A7D3441AA4D57000F3F543 /* Localization.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6A7D3431AA4D57000F3F543 /* en */,
-				E6A7D3451AA4D57700F3F543 /* pt */,
-			);
-			name = Localization.strings;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -442,7 +422,6 @@
 				E67160E71AA0DFAA007A970D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		E67160E81AA0DFAA007A970D /* Build configuration list for PBXNativeTarget "GuiaSpTests" */ = {
 			isa = XCConfigurationList;
@@ -451,7 +430,6 @@
 				E67160EA1AA0DFAA007A970D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
