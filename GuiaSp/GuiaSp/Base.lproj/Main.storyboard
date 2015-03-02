@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="mapView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAt-zO-mNS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Guia SP" id="v1N-VE-k8K">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="gJX-x2-ym4"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SaZ-DD-ATH">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="Mapa"/>
+                                    <segment title="Satelite"/>
+                                    <segment title="Híbrido"/>
+                                </segments>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="10" y="712" width="384" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Opcoes:" destination="BYZ-38-t0r" eventType="valueChanged" id="HO5-W4-VBO"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2oi-AP-gyN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hAt-zO-mNS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="1Bi-jm-XFo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2oi-AP-gyN" secondAttribute="trailing" constant="-16" id="PIX-NO-0ww"/>
+                            <constraint firstItem="SaZ-DD-ATH" firstAttribute="top" secondItem="2oi-AP-gyN" secondAttribute="bottom" constant="8" id="W6p-kO-ABa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SaZ-DD-ATH" secondAttribute="trailing" id="blQ-cR-4HZ"/>
+                            <constraint firstItem="SaZ-DD-ATH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="chH-qh-tFd"/>
+                            <constraint firstItem="2oi-AP-gyN" firstAttribute="top" secondItem="hAt-zO-mNS" secondAttribute="bottom" id="fZn-em-2hQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hAt-zO-mNS" secondAttribute="trailing" constant="-16" id="fxf-5T-fVb"/>
+                            <constraint firstItem="hAt-zO-mNS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="q6b-Df-TYb"/>
+                            <constraint firstItem="2oi-AP-gyN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="x5V-Jl-FT4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SaZ-DD-ATH" secondAttribute="bottom" constant="60" id="xMp-cQ-mX4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hAt-zO-mNS"/>
+                                <exclude reference="SaZ-DD-ATH"/>
+                                <exclude reference="2oi-AP-gyN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1Bi-jm-XFo"/>
+                                <exclude reference="fxf-5T-fVb"/>
+                                <exclude reference="q6b-Df-TYb"/>
+                                <exclude reference="PIX-NO-0ww"/>
+                                <exclude reference="fZn-em-2hQ"/>
+                                <exclude reference="x5V-Jl-FT4"/>
+                                <exclude reference="W6p-kO-ABa"/>
+                                <exclude reference="blQ-cR-4HZ"/>
+                                <exclude reference="chH-qh-tFd"/>
+                                <exclude reference="xMp-cQ-mX4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hAt-zO-mNS"/>
+                                <include reference="SaZ-DD-ATH"/>
+                                <include reference="2oi-AP-gyN"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1Bi-jm-XFo"/>
+                                <include reference="fxf-5T-fVb"/>
+                                <include reference="q6b-Df-TYb"/>
+                                <include reference="PIX-NO-0ww"/>
+                                <include reference="fZn-em-2hQ"/>
+                                <include reference="x5V-Jl-FT4"/>
+                                <include reference="W6p-kO-ABa"/>
+                                <include reference="blQ-cR-4HZ"/>
+                                <include reference="chH-qh-tFd"/>
+                                <include reference="xMp-cQ-mX4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="botaoVoltar" destination="v1N-VE-k8K" id="EXH-nx-cCv"/>
+                        <outlet property="mapa" destination="2oi-AP-gyN" id="CcJ-ib-OQ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.5" y="339.75"/>
+        </scene>
+    </scenes>
+</document>
