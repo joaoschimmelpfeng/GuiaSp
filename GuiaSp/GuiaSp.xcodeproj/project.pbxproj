@@ -118,15 +118,12 @@
 				E67160CA1AA0DFAA007A970D /* AppDelegate.m */,
 				E67160CC1AA0DFAA007A970D /* mapView.h */,
 				E67160CD1AA0DFAA007A970D /* mapView.m */,
-<<<<<<< Updated upstream
 				E6A7D35D1AA4F79F00F3F543 /* ControleDB.h */,
 				E6A7D35E1AA4F79F00F3F543 /* ControleDB.m */,
-=======
 				104BD5AC1AA4F9FE00FE79F8 /* TableViewController.h */,
 				104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */,
 				104BD5AF1AA4FE4E00FE79F8 /* ViewController.h */,
 				104BD5B01AA4FE4E00FE79F8 /* ViewController.m */,
->>>>>>> Stashed changes
 				E67160CF1AA0DFAA007A970D /* Main.storyboard */,
 				E67160D21AA0DFAA007A970D /* Images.xcassets */,
 				E67160D41AA0DFAA007A970D /* LaunchScreen.xib */,
@@ -268,12 +265,9 @@
 				E67160CE1AA0DFAA007A970D /* mapView.m in Sources */,
 				E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */,
 				E67160C81AA0DFAA007A970D /* main.m in Sources */,
-<<<<<<< Updated upstream
 				E6A7D35F1AA4F79F00F3F543 /* ControleDB.m in Sources */,
-=======
 				104BD5AE1AA4F9FE00FE79F8 /* TableViewController.m in Sources */,
 				104BD5B11AA4FE4E00FE79F8 /* ViewController.m in Sources */,
->>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
