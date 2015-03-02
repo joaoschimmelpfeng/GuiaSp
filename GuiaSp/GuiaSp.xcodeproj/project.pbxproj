@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104BD5A81AA4EF7A00FE79F8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104BD5A71AA4EF7A00FE79F8 /* Social.framework */; };
 		E67160C81AA0DFAA007A970D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160C71AA0DFAA007A970D /* main.m */; };
 		E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160CA1AA0DFAA007A970D /* AppDelegate.m */; };
 		E67160CE1AA0DFAA007A970D /* mapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160CD1AA0DFAA007A970D /* mapView.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104BD5A71AA4EF7A00FE79F8 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E67160C21AA0DFAA007A970D /* GuiaSp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiaSp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67160C61AA0DFAA007A970D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67160C71AA0DFAA007A970D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104BD5A81AA4EF7A00FE79F8 /* Social.framework in Frameworks */,
 				E67160EE1AA0E078007A970D /* CoreData.framework in Frameworks */,
 				E67160EC1AA0E063007A970D /* MapKit.framework in Frameworks */,
 			);
@@ -69,6 +72,7 @@
 		E67160B91AA0DFA9007A970D = {
 			isa = PBXGroup;
 			children = (
+				104BD5A71AA4EF7A00FE79F8 /* Social.framework */,
 				E67160ED1AA0E078007A970D /* CoreData.framework */,
 				E67160EB1AA0E063007A970D /* MapKit.framework */,
 				E67160C41AA0DFAA007A970D /* GuiaSp */,
@@ -422,6 +426,7 @@
 				E67160E71AA0DFAA007A970D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E67160E81AA0DFAA007A970D /* Build configuration list for PBXNativeTarget "GuiaSpTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				E67160EA1AA0DFAA007A970D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
