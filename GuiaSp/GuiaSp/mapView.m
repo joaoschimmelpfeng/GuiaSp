@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    []
+    botaoVoltar.title = NSLocalizedString(@"titulo", nil);
 }
 
 - (void)didReceiveMemoryWarning {
