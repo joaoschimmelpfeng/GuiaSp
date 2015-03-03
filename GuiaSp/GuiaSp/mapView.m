@@ -7,6 +7,7 @@
 //
 
 #import "mapView.h"
+#import <Parse/Parse.h>
 
 @interface mapView ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 }
 
 - (void)didReceiveMemoryWarning

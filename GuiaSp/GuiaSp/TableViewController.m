@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import <Parse/Parse.h>
 
 @interface TableViewController ()
 
@@ -21,6 +22,12 @@
     nomeLocal = [[NSMutableArray alloc] init];
     imagem = [[NSMutableArray alloc] init];
     descBasicaLocal = [[NSMutableArray alloc] init];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"locais"];
+    [query getObjectInBackgroundWithId:@"hoSEtvp38g" block:^(PFObject *gameScore, NSError *error)
+     {
+         NSLog(@"%@", gameScore);
+     }];
  
     [super viewDidLoad];
     
