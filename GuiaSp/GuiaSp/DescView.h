@@ -16,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *desc;
 @property (weak, nonatomic) IBOutlet UILabel *funcionamento;
 @property (weak, nonatomic) IBOutlet UILabel *preco;
+- (IBAction)compartilharFace:(id)sender;
+- (IBAction)compartilharTwitter:(id)sender;
 
 @end

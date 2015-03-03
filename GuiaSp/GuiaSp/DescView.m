@@ -7,6 +7,7 @@
 //
 
 #import "DescView.h"
+#import <Social/Social.h>
 
 @interface DescView ()
 
@@ -33,5 +34,59 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)compartilharFace:(id)sender {
+    
+    NSLog(@"Facebook post...");
+    
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]){
+        NSLog(@"Logado!");
+        
+        SLComposeViewController *seuPoste;
+        
+        seuPoste = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [seuPoste setInitialText:@"Estou indo para " "digite nome do local"];
+        
+        [self presentViewController:seuPoste animated:YES completion:nil];
+        
+    }
+    
+    else {
+        UIAlertView *erro = [[UIAlertView alloc] initWithTitle:@"Erro" message:@"Você náo está conectado ao Facebook." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [erro show];
+        
+        
+    }
+
+}
+
+- (IBAction)compartilharTwitter:(id)sender {
+    
+    NSLog(@"Twitter post...");
+    
+    if ([SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter]){
+        NSLog(@"Logado!");
+        
+        SLComposeViewController *seuPoste;
+        
+        seuPoste = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+        
+        [seuPoste setInitialText:@"Estou indo para " "digite nome do local"];
+        
+        [self presentViewController:seuPoste animated:YES completion:nil];
+        
+    }
+    
+    else {
+        UIAlertView *erro = [[UIAlertView alloc] initWithTitle:@"Erro" message:@"Você náo está conectado ao Twitter." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [erro show];
+        
+        
+    }
+
+}
 
 @end

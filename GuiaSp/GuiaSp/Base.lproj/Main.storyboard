@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -63,15 +63,15 @@
                                             <exclude reference="gtt-zC-jWK"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="CN8-8X-Vgn"/>
-                                            <exclude reference="YcD-S3-etj"/>
-                                            <exclude reference="iWH-NH-Weo"/>
                                             <exclude reference="e1X-Ib-eSv"/>
                                             <exclude reference="sHY-Y2-gmf"/>
                                             <exclude reference="4rJ-Tm-cL5"/>
                                             <exclude reference="8zH-Ll-0kg"/>
                                             <exclude reference="fId-7K-IPv"/>
                                             <exclude reference="m6j-Uf-seS"/>
+                                            <exclude reference="CN8-8X-Vgn"/>
+                                            <exclude reference="YcD-S3-etj"/>
+                                            <exclude reference="iWH-NH-Weo"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -81,15 +81,15 @@
                                             <include reference="gtt-zC-jWK"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="CN8-8X-Vgn"/>
-                                            <include reference="YcD-S3-etj"/>
-                                            <include reference="iWH-NH-Weo"/>
                                             <include reference="e1X-Ib-eSv"/>
                                             <include reference="sHY-Y2-gmf"/>
                                             <include reference="4rJ-Tm-cL5"/>
                                             <include reference="8zH-Ll-0kg"/>
                                             <include reference="fId-7K-IPv"/>
                                             <include reference="m6j-Uf-seS"/>
+                                            <include reference="CN8-8X-Vgn"/>
+                                            <include reference="YcD-S3-etj"/>
+                                            <include reference="iWH-NH-Weo"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -153,7 +153,7 @@
                                     <rect key="frame" x="80" y="216" width="240" height="128"/>
                                 </variation>
                             </scrollView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descricrao" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-QE-LhF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descricao" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-QE-LhF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -168,7 +168,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="600" width="46" height="30"/>
+                                    <rect key="frame" x="177" y="634" width="46" height="30"/>
                                 </variation>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEH-HZ-IIj">
@@ -186,9 +186,42 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="57" y="566" width="50" height="21"/>
+                                    <rect key="frame" x="57" y="560" width="50" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compartilhar:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-Qi-qav">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="57" y="595" width="213" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRm-j8-brg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="181" y="590" width="102" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="compartilharFace:" destination="AhC-rO-wd0" eventType="touchUpInside" id="kgJ-tX-ec2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHs-QN-atd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="307" y="590" width="63" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="compartilharTwitter:" destination="AhC-rO-wd0" eventType="touchUpInside" id="eZG-gT-WUT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -201,6 +234,9 @@
                                 <exclude reference="aES-Nx-xEb"/>
                                 <exclude reference="pEH-HZ-IIj"/>
                                 <exclude reference="KXM-kG-G2F"/>
+                                <exclude reference="DcR-Qi-qav"/>
+                                <exclude reference="qRm-j8-brg"/>
+                                <exclude reference="yHs-QN-atd"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -213,6 +249,9 @@
                                 <include reference="aES-Nx-xEb"/>
                                 <include reference="pEH-HZ-IIj"/>
                                 <include reference="KXM-kG-G2F"/>
+                                <include reference="DcR-Qi-qav"/>
+                                <include reference="qRm-j8-brg"/>
+                                <include reference="yHs-QN-atd"/>
                             </mask>
                         </variation>
                     </view>
@@ -234,7 +273,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="dTd-R0-I2l">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7sA-l4-7jY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="dxd-Ay-f4M" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qLu-pC-q2v">
@@ -247,6 +285,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="dED-Fv-uE4"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7sA-l4-7jY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1176" y="352.5"/>
         </scene>
@@ -269,9 +308,6 @@
                                     <segment title="Satelite"/>
                                     <segment title="Híbrido"/>
                                 </segments>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="10" y="712" width="374" height="29"/>
-                                </variation>
                                 <connections>
                                     <action selector="Opcoes:" destination="BYZ-38-t0r" eventType="valueChanged" id="HO5-W4-VBO"/>
                                 </connections>
@@ -299,13 +335,13 @@
                                 <exclude reference="2oi-AP-gyN"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="PIX-NO-0ww"/>
-                                <exclude reference="x5V-Jl-FT4"/>
+                                <exclude reference="xMp-cQ-mX4"/>
                                 <exclude reference="W6p-kO-ABa"/>
                                 <exclude reference="blQ-cR-4HZ"/>
                                 <exclude reference="chH-qh-tFd"/>
                                 <exclude reference="tbA-Pb-XTj"/>
-                                <exclude reference="xMp-cQ-mX4"/>
+                                <exclude reference="PIX-NO-0ww"/>
+                                <exclude reference="x5V-Jl-FT4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -314,13 +350,13 @@
                                 <include reference="2oi-AP-gyN"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PIX-NO-0ww"/>
-                                <include reference="x5V-Jl-FT4"/>
+                                <include reference="xMp-cQ-mX4"/>
                                 <exclude reference="W6p-kO-ABa"/>
                                 <include reference="blQ-cR-4HZ"/>
                                 <include reference="chH-qh-tFd"/>
                                 <include reference="tbA-Pb-XTj"/>
-                                <include reference="xMp-cQ-mX4"/>
+                                <include reference="PIX-NO-0ww"/>
+                                <include reference="x5V-Jl-FT4"/>
                             </mask>
                         </variation>
                     </view>
