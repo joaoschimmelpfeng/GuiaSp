@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIScrollView *imagensScroll;
-@property (weak, nonatomic) IBOutlet UIPageControl *imagensPage;
+{
+    UIScrollView *imagensScroll;
+    UIPageControl *imagensPage;
+}
+
+@property (retain, nonatomic) IBOutlet UIScrollView *imagensScroll;
+@property (retain, nonatomic) IBOutlet UIPageControl *imagensPage;
 
 @end

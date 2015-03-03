@@ -12,13 +12,11 @@
 
 @interface mapView : UIViewController<CLLocationManagerDelegate>
 
-{
-
- }
-
 @property CLLocationCoordinate2D loc;
 @property MKCoordinateRegion region;
 @property MKPointAnnotation *ponto;
+@property NSNumber *latitude;
+@property NSNumber *longitude;
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapa;
 @property (retain, nonatomic)CLLocationManager *locationManager;

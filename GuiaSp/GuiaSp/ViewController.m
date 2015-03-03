@@ -14,7 +14,20 @@
 
 @implementation ViewController
 
+@synthesize imagensScroll, imagensPage;
+
 - (void)viewDidLoad {
+    
+    for (int i =0; i<2; i++) {
+        
+        UIImageView *imagensUrl = [[UIImageView alloc]initWithImage:[UIImage imageWithData:[NSData dataWithContentsOfURL: [NSURL URLWithString:@"http://msalx.vejasp.abril.com.br/2012/08/22/0020/RPss5/museu-do-ipiranga.jpeg?1348322048"]]]];
+        
+        
+        [imagensScroll addSubview:imagensUrl];
+        //[imagensScroll release];
+        
+    }
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -33,5 +46,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

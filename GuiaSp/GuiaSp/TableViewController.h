@@ -11,8 +11,6 @@
 
 @interface TableViewController : UITableViewController
 
-@property NSMutableArray *imagem;
-@property NSMutableArray *nomeLocal;
-@property NSMutableArray *descBasicaLocal;
+@property NSMutableArray *objetos;
 @property LocalizationManager *locMan;
 @end
