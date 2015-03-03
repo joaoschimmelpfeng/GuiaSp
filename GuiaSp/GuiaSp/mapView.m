@@ -16,7 +16,7 @@
 @end
 
 @implementation mapView
-@synthesize mapa, locationManager,ponto;
+@synthesize mapa, locationManager,ponto,latitude,longitude;
 
 - (void)viewDidLoad{
 

@@ -11,6 +11,9 @@
 		104BD5AE1AA4F9FE00FE79F8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */; };
 		104BD5B11AA4FE4E00FE79F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BD5B01AA4FE4E00FE79F8 /* ViewController.m */; };
 		E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4501AA6211B008BC9A7 /* LocalizationManager.m */; };
+		E634F45A1AA63A44008BC9A7 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4591AA63A44008BC9A7 /* TabBarController.m */; };
+		E634F45D1AA63C42008BC9A7 /* DescView.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F45C1AA63C42008BC9A7 /* DescView.m */; };
+		E634F4601AA64088008BC9A7 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F45F1AA64088008BC9A7 /* TableViewCell.m */; };
 		E67160C81AA0DFAA007A970D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160C71AA0DFAA007A970D /* main.m */; };
 		E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160CA1AA0DFAA007A970D /* AppDelegate.m */; };
 		E67160CE1AA0DFAA007A970D /* mapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160CD1AA0DFAA007A970D /* mapView.m */; };
@@ -57,6 +60,12 @@
 		E634F4521AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E634F4531AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		E634F4541AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		E634F4581AA63A44008BC9A7 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		E634F4591AA63A44008BC9A7 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		E634F45B1AA63C42008BC9A7 /* DescView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescView.h; sourceTree = "<group>"; };
+		E634F45C1AA63C42008BC9A7 /* DescView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescView.m; sourceTree = "<group>"; };
+		E634F45E1AA64088008BC9A7 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		E634F45F1AA64088008BC9A7 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		E67160C21AA0DFAA007A970D /* GuiaSp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiaSp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67160C61AA0DFAA007A970D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67160C71AA0DFAA007A970D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -168,10 +177,16 @@
 				E67160CD1AA0DFAA007A970D /* mapView.m */,
 				104BD5AC1AA4F9FE00FE79F8 /* TableViewController.h */,
 				104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */,
+				E634F45E1AA64088008BC9A7 /* TableViewCell.h */,
+				E634F45F1AA64088008BC9A7 /* TableViewCell.m */,
 				E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */,
 				E634F4501AA6211B008BC9A7 /* LocalizationManager.m */,
 				104BD5AF1AA4FE4E00FE79F8 /* ViewController.h */,
 				104BD5B01AA4FE4E00FE79F8 /* ViewController.m */,
+				E634F45B1AA63C42008BC9A7 /* DescView.h */,
+				E634F45C1AA63C42008BC9A7 /* DescView.m */,
+				E634F4581AA63A44008BC9A7 /* TabBarController.h */,
+				E634F4591AA63A44008BC9A7 /* TabBarController.m */,
 				E67160CF1AA0DFAA007A970D /* Main.storyboard */,
 				E67160D21AA0DFAA007A970D /* Images.xcassets */,
 				E67160D41AA0DFAA007A970D /* LaunchScreen.xib */,
@@ -310,12 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E634F45A1AA63A44008BC9A7 /* TabBarController.m in Sources */,
 				E67160CE1AA0DFAA007A970D /* mapView.m in Sources */,
 				E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */,
 				E67160C81AA0DFAA007A970D /* main.m in Sources */,
+				E634F4601AA64088008BC9A7 /* TableViewCell.m in Sources */,
 				104BD5AE1AA4F9FE00FE79F8 /* TableViewController.m in Sources */,
 				E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */,
 				104BD5B11AA4FE4E00FE79F8 /* ViewController.m in Sources */,
+				E634F45D1AA63C42008BC9A7 /* DescView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
