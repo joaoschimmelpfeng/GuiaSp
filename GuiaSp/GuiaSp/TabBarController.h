@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import "LocalizationManager.h"
 
 @interface TabBarController : UITabBarController
 
+@property PFObject *dados;
 @property UILabel *nome;
 @property UILabel *categoria;
 @property UIScrollView *scrollImages;
@@ -18,5 +21,6 @@
 @property UILabel *preco;
 @property NSNumber *latitude;
 @property NSNumber *longitude;
-
+@property LocalizationManager *locMan;
+-(void) update;
 @end

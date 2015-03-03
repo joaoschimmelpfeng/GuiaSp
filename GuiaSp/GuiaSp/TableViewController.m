@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "LocalizationManager.h"
 #import "TableViewCell.h"
+#import "TabBarController.h";
 #import <Parse/Parse.h>
 
 @interface TableViewController ()
@@ -59,6 +60,17 @@
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"celula" forIndexPath:indexPath];
     [cell update:[objetos objectAtIndex:[indexPath row]]];
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"toTabBar"])
+    {
+        NSIndexPath *num = [self.tableView indexPathForSelectedRow];
+        TabBarController *sView = segue.destinationViewController;
+        sView.dados = [objetos objectAtIndex:[num row]];
+        [sView update];
+    }
 }
 
 /*
