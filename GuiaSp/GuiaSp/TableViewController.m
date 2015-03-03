@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "LocalizationManager.h"
 #import <Parse/Parse.h>
 
 @interface TableViewController ()
@@ -14,20 +15,34 @@
 @end
 
 @implementation TableViewController
-
-    @synthesize imagem, nomeLocal, descBasicaLocal;
+@synthesize imagem, nomeLocal, descBasicaLocal,locMan;
 
 - (void)viewDidLoad {
-    
+    locMan = [LocalizationManager instance];
     nomeLocal = [[NSMutableArray alloc] init];
     imagem = [[NSMutableArray alloc] init];
     descBasicaLocal = [[NSMutableArray alloc] init];
     
     PFQuery *query = [PFQuery queryWithClassName:@"locais"];
-    [query getObjectInBackgroundWithId:@"hoSEtvp38g" block:^(PFObject *gameScore, NSError *error)
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+    {
+     if(error)
      {
-         NSLog(@"%@", gameScore);
-     }];
+         NSLog(@"Erro");
+     }
+     for (PFObject *e in objects)
+     {
+      NSLog([locMan getRegion]);
+      if([[locMan getRegion] isEqualToString:@"pt"])
+      {
+       NSLog(@"%@",[e objectForKey:@"desc"]);
+      }
+      else
+      {
+       NSLog(@"%@",[e objectForKey:@"descEng"]);
+      }
+     }
+    }];
  
     [super viewDidLoad];
     

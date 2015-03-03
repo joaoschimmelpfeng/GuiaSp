@@ -10,6 +10,7 @@
 		104BD5A81AA4EF7A00FE79F8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104BD5A71AA4EF7A00FE79F8 /* Social.framework */; };
 		104BD5AE1AA4F9FE00FE79F8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */; };
 		104BD5B11AA4FE4E00FE79F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BD5B01AA4FE4E00FE79F8 /* ViewController.m */; };
+		E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4501AA6211B008BC9A7 /* LocalizationManager.m */; };
 		E67160C81AA0DFAA007A970D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160C71AA0DFAA007A970D /* main.m */; };
 		E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160CA1AA0DFAA007A970D /* AppDelegate.m */; };
 		E67160CE1AA0DFAA007A970D /* mapView.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160CD1AA0DFAA007A970D /* mapView.m */; };
@@ -51,6 +52,11 @@
 		104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		104BD5AF1AA4FE4E00FE79F8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		104BD5B01AA4FE4E00FE79F8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
+		E634F4501AA6211B008BC9A7 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
+		E634F4521AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		E634F4531AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		E634F4541AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		E67160C21AA0DFAA007A970D /* GuiaSp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuiaSp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67160C61AA0DFAA007A970D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67160C71AA0DFAA007A970D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -162,6 +168,8 @@
 				E67160CD1AA0DFAA007A970D /* mapView.m */,
 				104BD5AC1AA4F9FE00FE79F8 /* TableViewController.h */,
 				104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */,
+				E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */,
+				E634F4501AA6211B008BC9A7 /* LocalizationManager.m */,
 				104BD5AF1AA4FE4E00FE79F8 /* ViewController.h */,
 				104BD5B01AA4FE4E00FE79F8 /* ViewController.m */,
 				E67160CF1AA0DFAA007A970D /* Main.storyboard */,
@@ -263,6 +271,7 @@
 				en,
 				Base,
 				pt,
+				"pt-BR",
 			);
 			mainGroup = E67160B91AA0DFA9007A970D;
 			productRefGroup = E67160C31AA0DFAA007A970D /* Products */;
@@ -305,6 +314,7 @@
 				E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */,
 				E67160C81AA0DFAA007A970D /* main.m in Sources */,
 				104BD5AE1AA4F9FE00FE79F8 /* TableViewController.m in Sources */,
+				E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */,
 				104BD5B11AA4FE4E00FE79F8 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +343,7 @@
 			children = (
 				E67160D01AA0DFAA007A970D /* Base */,
 				E6A7D3571AA4EB6800F3F543 /* pt */,
+				E634F4531AA627C0008BC9A7 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -342,6 +353,7 @@
 			children = (
 				E67160D51AA0DFAA007A970D /* Base */,
 				E6A7D3581AA4EB6800F3F543 /* pt */,
+				E634F4541AA627C0008BC9A7 /* pt-BR */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -351,6 +363,7 @@
 			children = (
 				E6A7D35A1AA4EB6E00F3F543 /* en */,
 				E6A7D35C1AA4EB6F00F3F543 /* pt */,
+				E634F4521AA627C0008BC9A7 /* pt-BR */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

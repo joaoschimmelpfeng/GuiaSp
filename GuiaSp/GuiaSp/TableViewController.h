@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocalizationManager.h"
 
 @interface TableViewController : UITableViewController
 
 @property NSMutableArray *imagem;
 @property NSMutableArray *nomeLocal;
 @property NSMutableArray *descBasicaLocal;
-
+@property LocalizationManager *locMan;
 @end
