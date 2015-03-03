@@ -10,6 +10,7 @@
 		104BD5A81AA4EF7A00FE79F8 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 104BD5A71AA4EF7A00FE79F8 /* Social.framework */; };
 		104BD5AE1AA4F9FE00FE79F8 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */; };
 		104BD5B11AA4FE4E00FE79F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104BD5B01AA4FE4E00FE79F8 /* ViewController.m */; };
+		D4087D121AA64C4800CE61C2 /* icone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4087D111AA64C4800CE61C2 /* icone.png */; };
 		E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4501AA6211B008BC9A7 /* LocalizationManager.m */; };
 		E67160C81AA0DFAA007A970D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160C71AA0DFAA007A970D /* main.m */; };
 		E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E67160CA1AA0DFAA007A970D /* AppDelegate.m */; };
@@ -52,6 +53,7 @@
 		104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		104BD5AF1AA4FE4E00FE79F8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		104BD5B01AA4FE4E00FE79F8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D4087D111AA64C4800CE61C2 /* icone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icone.png; path = GuiaSp/Images.xcassets/icone.png; sourceTree = "<group>"; };
 		E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
 		E634F4501AA6211B008BC9A7 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
 		E634F4521AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		E67160B91AA0DFA9007A970D = {
 			isa = PBXGroup;
 			children = (
+				D4087D111AA64C4800CE61C2 /* icone.png */,
 				E6E60E641AA60EBE00DED4B3 /* libsqlite3.dylib */,
 				E6E60E621AA60EB300DED4B3 /* libz.dylib */,
 				E6E60E601AA60EA300DED4B3 /* SystemConfiguration.framework */,
@@ -293,6 +296,7 @@
 				E6A7D3591AA4EB6E00F3F543 /* Localizable.strings in Resources */,
 				E67160D61AA0DFAA007A970D /* LaunchScreen.xib in Resources */,
 				E67160D31AA0DFAA007A970D /* Images.xcassets in Resources */,
+				D4087D121AA64C4800CE61C2 /* icone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
