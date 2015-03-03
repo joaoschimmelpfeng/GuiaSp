@@ -29,7 +29,7 @@
 -(NSString *) getRegion
 {
  NSString *language = [[NSLocale preferredLanguages] objectAtIndex:0];
-    return language;
+    return [language substringWithRange:NSMakeRange(0,2)];
 }
 
 @end
