@@ -8,11 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface mapView : UIViewController
+@interface mapView : UIViewController<CLLocationManagerDelegate>
+
+{
+
+ }
+
+@property CLLocationCoordinate2D loc;
+@property MKCoordinateRegion region;
+@property MKPointAnnotation *ponto;
+
 @property (weak, nonatomic) IBOutlet MKMapView *mapa;
+@property (retain, nonatomic)CLLocationManager *locationManager;
+
 - (IBAction)Opcoes:(id)sender;
 
+-(void)fazerRota;
 
 @end
 
