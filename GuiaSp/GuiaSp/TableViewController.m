@@ -9,7 +9,7 @@
 #import "TableViewController.h"
 #import "LocalizationManager.h"
 #import "TableViewCell.h"
-#import "TabBarController.h";
+#import "TabBarController.h"
 #import <Parse/Parse.h>
 
 @interface TableViewController ()
