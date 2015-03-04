@@ -131,16 +131,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="23" y="500" width="361" height="23"/>
                                 </variation>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-dR-vHW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="16" y="72" width="368" height="227"/>
-                                </variation>
-                            </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eqd-9N-Gtl">
                                 <rect key="frame" x="-19" y="-18" width="39" height="37"/>
                             </pageControl>
@@ -149,8 +143,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="23" y="316" width="306" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXM-kG-G2F">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="23" y="539" width="347" height="20.5"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compartilhar:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-Qi-qav">
@@ -158,7 +161,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="23" y="590" width="119" height="21"/>
                                 </variation>
                             </label>
@@ -201,7 +204,7 @@
                                         <exclude reference="lI7-fX-Axi"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="23" y="364" width="361" height="86"/>
                                     <mask key="constraints">
                                         <include reference="JXF-aq-7YP"/>
@@ -214,19 +217,30 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="156" y="636" width="89" height="30"/>
                                 </variation>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXM-kG-G2F">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="23" y="539" width="347" height="20.5"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-dR-vHW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="Flh-lf-E0o"/>
+                                    <constraint firstAttribute="height" constant="227" id="jya-JK-nzY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Flh-lf-E0o"/>
+                                        <exclude reference="jya-JK-nzY"/>
+                                    </mask>
                                 </variation>
-                            </label>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="16" y="72" width="368" height="227"/>
+                                    <mask key="constraints">
+                                        <include reference="Flh-lf-E0o"/>
+                                        <include reference="jya-JK-nzY"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="yHs-QN-atd" firstAttribute="leading" secondItem="qRm-j8-brg" secondAttribute="trailing" constant="28" id="0Ww-GH-ZrV">
@@ -278,15 +292,15 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Xy5-Vm-f2V"/>
-                                <exclude reference="4L6-dR-vHW"/>
                                 <exclude reference="eqd-9N-Gtl"/>
                                 <exclude reference="pEH-HZ-IIj"/>
+                                <exclude reference="KXM-kG-G2F"/>
                                 <exclude reference="DcR-Qi-qav"/>
                                 <exclude reference="qRm-j8-brg"/>
                                 <exclude reference="yHs-QN-atd"/>
                                 <exclude reference="2h3-QE-LhF"/>
                                 <exclude reference="aES-Nx-xEb"/>
-                                <exclude reference="KXM-kG-G2F"/>
+                                <exclude reference="4L6-dR-vHW"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="3lZ-h1-P9q"/>
@@ -327,15 +341,15 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Xy5-Vm-f2V"/>
-                                <include reference="4L6-dR-vHW"/>
                                 <include reference="eqd-9N-Gtl"/>
                                 <include reference="pEH-HZ-IIj"/>
+                                <include reference="KXM-kG-G2F"/>
                                 <include reference="DcR-Qi-qav"/>
                                 <include reference="qRm-j8-brg"/>
                                 <include reference="yHs-QN-atd"/>
                                 <include reference="2h3-QE-LhF"/>
                                 <include reference="aES-Nx-xEb"/>
-                                <include reference="KXM-kG-G2F"/>
+                                <include reference="4L6-dR-vHW"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="3lZ-h1-P9q"/>
