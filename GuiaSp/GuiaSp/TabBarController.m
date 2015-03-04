@@ -15,7 +15,7 @@
 @end
 
 @implementation TabBarController
-@synthesize nome,categoria,scrollImages,desc,funcionamento,preco,latitude,longitude, dados,locMan;
+@synthesize dados,descView,map,locMan;
 
 - (void)viewDidLoad
 {
@@ -31,15 +31,11 @@
 
 -(void) update
 {
-    nome.text = dados[@"nome"];
-    if([[locMan getRegion] isEqualToString:@"pt"])
-    {
-        desc.text = dados[@"desc"];
-    }
-    else
-    {
-        desc.text = dados[@"descEng"];
-    }
+    descView = [self.viewControllers objectAtIndex:0];
+    map = [self.viewControllers objectAtIndex:1];
+    [descView update:dados];
+    
+    
 }
 
 @end

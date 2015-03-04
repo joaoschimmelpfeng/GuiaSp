@@ -8,17 +8,30 @@
 
 #import "DescView.h"
 #import <Social/Social.h>
-
+#import "LocalizationManager.h"
 @interface DescView ()
 
 @end
 
 @implementation DescView
+@synthesize dados,nome,categoria,desc,scrollImages,funcionamento,preco,locMan;
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    locMan = [LocalizationManager instance];
+    nome.text = dados[@"nome"];
+    if([[locMan getRegion] isEqualToString:@"pt"])
+    {
+        desc.text = dados[@"desc"];
+    }
+    else
+    {
+        desc.text = dados[@"descEng"];
+    }
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,6 +47,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+-(void)update:(PFObject *)idados
+{
+    dados = idados;
+}
 
 - (IBAction)compartilharFace:(id)sender {
     
