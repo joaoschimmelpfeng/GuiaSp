@@ -10,7 +10,7 @@
         <scene sceneID="85S-10-bXj">
             <objects>
                 <tableViewController id="Ptz-NO-uV6" customClass="TableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" id="oht-Yd-4c5">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oht-Yd-4c5">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,7 +153,7 @@
                                     <rect key="frame" x="80" y="216" width="240" height="128"/>
                                 </variation>
                             </scrollView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descricao" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-QE-LhF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Descricao" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h3-QE-LhF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -223,7 +223,6 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="hCE-Tq-rh4"/>
@@ -255,7 +254,9 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="KZQ-xD-af2"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="more" id="KZQ-xD-af2">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="GuiaSP" id="Wpw-2y-Dd3"/>
                     <connections>
                         <outlet property="categoria" destination="hCE-Tq-rh4" id="mv1-lF-ub8"/>
@@ -360,7 +361,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="hUj-9k-YGN"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="hUj-9k-YGN"/>
                     <navigationItem key="navigationItem" title="GuiaSP" id="Gbc-TI-mzT"/>
                     <connections>
                         <outlet property="mapa" destination="2oi-AP-gyN" id="CcJ-ib-OQ0"/>

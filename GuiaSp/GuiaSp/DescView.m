@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
     locMan = [LocalizationManager instance];
     nome.text = dados[@"nome"];
