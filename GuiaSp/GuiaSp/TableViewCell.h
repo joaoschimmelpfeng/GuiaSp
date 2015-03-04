@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "LocalizationManager.h"
+
 @interface TableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *categoria;
 @property PFObject *bdData;
-
+@property LocalizationManager *locMan;
 -(void) update:(PFObject *)objeto;
 
 @end

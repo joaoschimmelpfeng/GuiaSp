@@ -8,12 +8,14 @@
 
 #import "TableViewCell.h"
 #import <Parse/Parse.h>
+#import "LocalizationManager.h"
 
 @implementation TableViewCell
-@synthesize nome,categoria,bdData;
+@synthesize nome,categoria,bdData,locMan;
 
 - (void)awakeFromNib
 {
+    locMan = [LocalizationManager instance];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -28,7 +30,14 @@
 {
     bdData = objeto;
     nome.text = objeto[@"nome"];
-    categoria.text = objeto[@"desc"];;
+    if([[locMan getRegion] isEqualToString:@"pt"])
+    {
+     categoria.text = objeto[@"desc"];
+    }
+    else
+    {
+     categoria.text = objeto[@"descEng"];
+    }
 }
 
 @end
