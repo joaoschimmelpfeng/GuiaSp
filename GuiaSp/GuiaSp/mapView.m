@@ -32,6 +32,13 @@
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
+    MKCoordinateRegion referencia = {{0.0,0.0},{0.0,0.0}};
+    referencia.center.latitude = [latitude doubleValue];
+    referencia.center.longitude = [longitude doubleValue];
+    ponto = [[MKPointAnnotation alloc]init];
+    ponto.coordinate = referencia.center;
+    //[self tracaRota];
+    
     [locationManager startUpdatingLocation];
     
 }
@@ -42,6 +49,8 @@
     _loc = [[locations lastObject] coordinate];
     
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(_loc, 200, 200);
+    
+    [self tracaRota];
     
     [mapa setRegion:region animated:YES];
     [manager stopUpdatingLocation];
@@ -62,17 +71,17 @@
     latitude = dados[@"latitude"];
     longitude = dados[@"longitude"];
 }
-
--(void)viewWillAppear:(BOOL)animated
-{
-    MKCoordinateRegion referencia = {{0.0,0.0},{0.0,0.0}};
-    referencia.center.latitude = [latitude doubleValue];
-    referencia.center.longitude = [longitude doubleValue];
-    ponto = [[MKPointAnnotation alloc]init];
-    ponto.coordinate = referencia.center;
-    [self tracaRota];
-    
-}
+//
+//-(void)viewWillAppear:(BOOL)animated
+//{
+//    MKCoordinateRegion referencia = {{0.0,0.0},{0.0,0.0}};
+//    referencia.center.latitude = [latitude doubleValue];
+//    referencia.center.longitude = [longitude doubleValue];
+//    ponto = [[MKPointAnnotation alloc]init];
+//    ponto.coordinate = referencia.center;
+//    [self tracaRota];
+//    
+//}
 
 -(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     
