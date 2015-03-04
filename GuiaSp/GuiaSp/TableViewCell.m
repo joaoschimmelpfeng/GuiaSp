@@ -32,11 +32,11 @@
     nome.text = objeto[@"nome"];
     if([[locMan getRegion] isEqualToString:@"pt"])
     {
-     categoria.text = objeto[@"desc"];
+     categoria.text = objeto[@"categoria"];
     }
     else
     {
-     categoria.text = objeto[@"descEng"];
+     categoria.text = objeto[@"categoriaEng"];
     }
 }
 
