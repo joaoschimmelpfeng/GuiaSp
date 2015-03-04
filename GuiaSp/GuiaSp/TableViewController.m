@@ -28,7 +28,6 @@
     {
      for (PFObject *e in objects)
      {
-         NSLog(@"aqui");
       [objetos addObject:e];
          [self.tableView reloadData];
      }

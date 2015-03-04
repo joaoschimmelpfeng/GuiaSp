@@ -14,7 +14,7 @@
 @end
 
 @implementation DescView
-@synthesize dados,nome,categoria,desc,scrollImages,funcionamento,preco,locMan;
+@synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan;
 
 - (void)viewDidLoad
 {
@@ -25,10 +25,14 @@
     if([[locMan getRegion] isEqualToString:@"pt"])
     {
         desc.text = dados[@"desc"];
+        funcionamento.text =[NSString stringWithFormat:@"Funcionamento: %@",dados[@"funcionamento"]];
+        preco.text =[NSString stringWithFormat:@"Preco: %@",dados[@"preco"]];
     }
     else
     {
         desc.text = dados[@"descEng"];
+        funcionamento.text =[NSString stringWithFormat:@"Funcionamento: %@",dados[@"funcionamentoEng"]];
+        preco.text =[NSString stringWithFormat:@"Preco: %@",dados[@"precoEng"]];
     }
     
     [self.view setBackgroundColor:[UIColor whiteColor]];

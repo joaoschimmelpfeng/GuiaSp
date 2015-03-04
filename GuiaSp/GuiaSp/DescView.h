@@ -14,7 +14,6 @@
 
 
 @property (weak, nonatomic) IBOutlet UILabel *nome;
-@property (weak, nonatomic) IBOutlet UILabel *categoria;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollImages;
 @property (weak, nonatomic) IBOutlet UITextView *desc;
 @property (weak, nonatomic) IBOutlet UILabel *funcionamento;
