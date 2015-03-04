@@ -9,7 +9,6 @@
 #import "DescView.h"
 #import <Social/Social.h>
 #import "LocalizationManager.h"
-
 @interface DescView ()
 
 @end
@@ -25,18 +24,14 @@
     nome.text = dados[@"nome"];
     if([[locMan getRegion] isEqualToString:@"pt"])
     {
-        categoria.text = dados[@"categoria"];
         desc.text = dados[@"desc"];
-        funcionamento.text =[NSString stringWithFormat:@"Funcionamento: %@",dados[@"funcionamento"]];
-        preco.text = [NSString stringWithFormat:@"Preço: %@",dados[@"preco"]];
     }
     else
     {
-        categoria.text = dados[@"categoriaEng"];
         desc.text = dados[@"descEng"];
-        funcionamento.text = [NSString stringWithFormat:@"Operation: %@",dados[@"funcionamentoEng"]];
-        preco.text = [NSString stringWithFormat:@"Price: %@",dados[@"precoEng"]];
     }
+    
+    [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
 

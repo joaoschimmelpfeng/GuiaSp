@@ -12,6 +12,7 @@
 
 @interface DescView : UIViewController
 
+
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *categoria;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollImages;
