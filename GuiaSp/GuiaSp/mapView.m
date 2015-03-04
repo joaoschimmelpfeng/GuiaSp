@@ -26,7 +26,13 @@
     [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
     [locationManager setDelegate:self];
     [mapa setDelegate:self];
-
+    
+    
+    
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    [locationManager startUpdatingLocation];
     
 }
 
@@ -50,37 +56,14 @@
     return renderer;
 }
 
-
-
--(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+-(void)viewDidAppear:(BOOL)animated
+{
     
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)Opcoes:(id)sender
-{
-    switch (((UISegmentedControl *) sender).selectedSegmentIndex)
-    {
-        case 1:
-            mapa.mapType = MKMapTypeSatellite;
-        break;
-            
-        case 0:
-            mapa.mapType = MKMapTypeStandard;
-        break;
-            
-        default:
-            mapa.mapType = MKMapTypeHybrid;
-        break;
-    }
-}
-
--(void)fazerRota{
+    MKCoordinateRegion referencia = {{0.0,0.0},{0.0,0.0}};
+    referencia.center.latitude = [latitude doubleValue];
+    referencia.center.longitude = [longitude doubleValue];
+    ponto = [[MKPointAnnotation alloc]init];
+    ponto.coordinate = referencia.center;
     
     MKPlacemark *source = [[MKPlacemark alloc]initWithCoordinate:CLLocationCoordinate2DMake(_loc.latitude, _loc.longitude) addressDictionary:nil ];
     MKMapItem *srcMapItem = [[MKMapItem alloc]initWithPlacemark:source];
@@ -134,6 +117,34 @@
         //        }];
     }];
     
+}
+
+-(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)Opcoes:(id)sender
+{
+    switch (((UISegmentedControl *) sender).selectedSegmentIndex)
+    {
+        case 1:
+            mapa.mapType = MKMapTypeSatellite;
+        break;
+            
+        case 0:
+            mapa.mapType = MKMapTypeStandard;
+        break;
+            
+        default:
+            mapa.mapType = MKMapTypeHybrid;
+        break;
+    }
 }
 
 

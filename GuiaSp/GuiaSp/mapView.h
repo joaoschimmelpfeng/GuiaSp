@@ -23,7 +23,7 @@
 
 - (IBAction)Opcoes:(id)sender;
 
--(void)fazerRota;
+
 
 @end
 
