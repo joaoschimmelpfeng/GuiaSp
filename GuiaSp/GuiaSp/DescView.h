@@ -10,11 +10,20 @@
 #import <Parse/Parse.h>
 #import "LocalizationManager.h"
 
-@interface DescView : UIViewController
+@interface DescView : UIViewController <UIScrollViewDelegate> {
+    
+        
+        UIPageControl *pageImages;
+        UIScrollView *scrollImages;
+        NSArray *imagens;
+    
+}
 
 
 @property (weak, nonatomic) IBOutlet UILabel *nome;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollImages;
+@property (weak, nonatomic) IBOutlet UILabel *categoria;
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollImages;
+@property (retain, nonatomic) IBOutlet UIPageControl *pageImages;
 @property (weak, nonatomic) IBOutlet UITextView *desc;
 @property (weak, nonatomic) IBOutlet UILabel *funcionamento;
 @property (weak, nonatomic) IBOutlet UILabel *preco;
@@ -23,5 +32,6 @@
 -(void)update:(PFObject *)idados;
 - (IBAction)compartilharFace:(id)sender;
 - (IBAction)compartilharTwitter:(id)sender;
+- (IBAction)mudarPag:(id)sender;
 
 @end

@@ -9,17 +9,47 @@
 #import "DescView.h"
 #import <Social/Social.h>
 #import "LocalizationManager.h"
+
 @interface DescView ()
 
 @end
 
 @implementation DescView
+
 @synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan;
+
+//ScrollView
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    int page = scrollImages.contentOffset.x / scrollView.frame.size.width;
+    
+    pageImages.currentPage = page;
+    
+}
 
 - (void)viewDidLoad
 {
     
     [super viewDidLoad];
+    
+    //ScrollView
+    for (int i=0; i<4; i++) {
+        
+        UIImageView *imagens = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i]]];
+        
+        imagens.frame = CGRectMake((i-1)*320, 0, 320, 460);
+        
+        [scrollImages addSubview:imagens];
+
+    }
+    
+    scrollImages.delegate = self;
+    scrollImages.contentSize = CGSizeMake(320*3, 460);
+    scrollImages.pagingEnabled = YES;
+    
+    pageImages.numberOfPages=3;
+    pageImages.currentPage = 0;
+    
+    //banco de dados
     locMan = [LocalizationManager instance];
     nome.text = dados[@"nome"];
     if([[locMan getRegion] isEqualToString:@"pt"])
@@ -111,7 +141,34 @@
         
         
     }
-
 }
+
+//ScrollView
+-(void)scrollViewDidScroll:(UIScrollView *)sender {
+    
+// Update the page when more than 50% of the previous/next page is visible
+    
+CGFloat pageWidth = self.scrollImages.frame.size.width;
+int page = floor((self.scrollImages.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    
+self.pageImages.currentPage = page;
+    
+    }
+    
+- (IBAction)mudarPag:(id)sender {
+    
+// update the scroll view to the appropriate page
+    
+int page = pageImages.currentPage;
+    
+CGRect frame;
+frame.origin.x = self.scrollImages.frame.size.width * self.pageImages.currentPage;
+frame.origin.y = 0;
+frame.size = self.scrollImages.frame.size;
+    
+    [self.scrollImages scrollRectToVisible:frame animated:YES];
+    
+    }
+
 
 @end
