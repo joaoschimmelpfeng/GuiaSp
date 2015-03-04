@@ -8,19 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "DescView.h"
+#import "mapView.h"
 #import "LocalizationManager.h"
 
 @interface TabBarController : UITabBarController
 
 @property PFObject *dados;
-@property UILabel *nome;
-@property UILabel *categoria;
-@property UIScrollView *scrollImages;
-@property UITextView *desc;
-@property UILabel *funcionamento;
-@property UILabel *preco;
-@property NSNumber *latitude;
-@property NSNumber *longitude;
+@property DescView *descView;
+@property mapView *map;
 @property LocalizationManager *locMan;
 -(void) update;
 @end
