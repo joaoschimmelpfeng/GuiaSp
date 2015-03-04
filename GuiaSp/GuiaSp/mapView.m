@@ -16,7 +16,7 @@
 @end
 
 @implementation mapView
-@synthesize mapa, locationManager,ponto,latitude,longitude;
+@synthesize mapa, locationManager,ponto,latitude,longitude,dados;
 
 - (void)viewDidLoad{
 
@@ -56,9 +56,29 @@
     return renderer;
 }
 
--(void)viewDidAppear:(BOOL)animated
+-(void)update:(PFObject *)idados
 {
+    dados = idados;
+    latitude = dados[@"latitude"];
+    longitude = dados[@"longitude"];
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    MKCoordinateRegion referencia = {{0.0,0.0},{0.0,0.0}};
+    referencia.center.latitude = [latitude doubleValue];
+    referencia.center.longitude = [longitude doubleValue];
+    ponto = [[MKPointAnnotation alloc]init];
+    ponto.coordinate = referencia.center;
+    [self tracaRota];
     
+}
+
+-(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
+    
+}
+
+-(void)tracaRota{
     MKCoordinateRegion referencia = {{0.0,0.0},{0.0,0.0}};
     referencia.center.latitude = [latitude doubleValue];
     referencia.center.longitude = [longitude doubleValue];
@@ -87,7 +107,7 @@
     
     [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
         if (error) {
-            NSLog(@"Erro ao buscar rota");
+            NSLog(@"Erro ao buscar rota: %@",error.debugDescription);
         } else {
             NSArray *arrRoutes = [response routes];
             for (MKRoute *route in arrRoutes) {
@@ -116,10 +136,6 @@
         //            }];
         //        }];
     }];
-    
-}
-
--(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     
 }
 

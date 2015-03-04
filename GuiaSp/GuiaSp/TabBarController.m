@@ -8,6 +8,7 @@
 
 #import "TabBarController.h"
 #import "LocalizationManager.h"
+#import "mapView.h"
 #import <Parse/Parse.h>
 
 @interface TabBarController ()
@@ -15,7 +16,7 @@
 @end
 
 @implementation TabBarController
-@synthesize dados,descView,map,locMan;
+@synthesize dados,descView,locMan,map;
 
 - (void)viewDidLoad
 {
@@ -34,6 +35,7 @@
     descView = [self.viewControllers objectAtIndex:0];
     map = [self.viewControllers objectAtIndex:1];
     [descView update:dados];
+    [map update:dados];
     
     
 }
