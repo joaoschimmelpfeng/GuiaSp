@@ -98,7 +98,7 @@
         {
             img1 = [UIImage imageWithData:imageData];
             UIImageView *Simagens = [[UIImageView alloc] initWithImage:img1];
-            Simagens.frame = CGRectMake(0, 0,343,scrollImages.frame.size.height);
+            Simagens.frame = CGRectMake(0, 0,scrollImages.frame.size.width,scrollImages.frame.size.height);
             [scrollImages addSubview:Simagens];
         }
     }];

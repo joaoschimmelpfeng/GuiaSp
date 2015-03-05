@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -615,15 +615,16 @@
             </objects>
             <point key="canvasLocation" x="2424" y="864.75"/>
         </scene>
-        <!--View Controller-->
+        <!--First View-->
         <scene sceneID="4oU-hV-Kcg">
             <objects>
-                <viewController id="7Gz-34-2vf" sceneMemberID="viewController">
+                <viewController id="7Gz-34-2vf" customClass="FirstView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q0I-cG-xGo"/>
                         <viewControllerLayoutGuide type="bottom" id="Xat-Ot-Mx8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DrL-8T-Sfs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="prr-nR-gq9">
@@ -638,8 +639,7 @@
                                         <exclude reference="Tox-0P-rtu"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-7" y="162" width="400" height="400"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="Rj8-BO-o7X"/>
                                         <include reference="Tox-0P-rtu"/>
@@ -652,7 +652,7 @@
                                     <constraint firstAttribute="height" constant="144" id="4xN-Iq-8nf"/>
                                     <constraint firstAttribute="width" constant="144" id="NKa-cT-2tY"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="museum1.png">
+                                <state key="normal" title="Museu" image="museum1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -662,12 +662,15 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="27" y="200" width="143" height="144"/>
+                                    <rect key="frame" x="25" y="170" width="144" height="144"/>
                                     <mask key="constraints">
                                         <include reference="4xN-Iq-8nf"/>
                                         <include reference="NKa-cT-2tY"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="Ptz-NO-uV6" kind="show" identifier="museu" id="lXj-5L-o5s"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeH-Gj-a5u">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -677,7 +680,7 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="144"/>
                                     </constraint>
                                 </constraints>
-                                <state key="normal" title="Button" image="bar.png">
+                                <state key="normal" title="Bar" image="bar.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -687,12 +690,15 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="197" y="193" width="176" height="159"/>
+                                    <rect key="frame" x="231" y="170" width="144" height="144"/>
                                     <mask key="constraints">
                                         <include reference="F5u-vo-aua"/>
                                         <include reference="QXy-Un-Y0W"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="Ptz-NO-uV6" kind="show" identifier="bar" id="RuR-CB-UUA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50P-Kz-2IK">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -700,7 +706,7 @@
                                     <constraint firstAttribute="height" constant="144" id="3ax-qQ-Rl8"/>
                                     <constraint firstAttribute="width" constant="144" id="6o2-et-n3n"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="teatro1.png">
+                                <state key="normal" title="Teatro" image="teatro1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="default">
@@ -710,12 +716,15 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="18" y="374" width="160" height="160"/>
+                                    <rect key="frame" x="25" y="355" width="144" height="144"/>
                                     <mask key="constraints">
                                         <include reference="3ax-qQ-Rl8"/>
                                         <include reference="6o2-et-n3n"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <segue destination="Ptz-NO-uV6" kind="show" identifier="teatro" id="KXU-SH-ZsN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -745,14 +754,14 @@
                                 <exclude reference="50P-Kz-2IK"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="emk-2g-hqc"/>
-                                <exclude reference="xdl-uI-eaS"/>
+                                <exclude reference="Ijz-iO-mZx"/>
+                                <exclude reference="lb4-My-e2c"/>
                                 <exclude reference="1Li-cp-xaM"/>
                                 <exclude reference="qAl-xl-kip"/>
                                 <exclude reference="6Es-Lc-MF5"/>
                                 <exclude reference="fpf-6g-l5V"/>
-                                <exclude reference="Ijz-iO-mZx"/>
-                                <exclude reference="lb4-My-e2c"/>
+                                <exclude reference="emk-2g-hqc"/>
+                                <exclude reference="xdl-uI-eaS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -763,25 +772,27 @@
                                 <include reference="50P-Kz-2IK"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="emk-2g-hqc"/>
-                                <include reference="xdl-uI-eaS"/>
+                                <include reference="Ijz-iO-mZx"/>
+                                <include reference="lb4-My-e2c"/>
                                 <include reference="1Li-cp-xaM"/>
                                 <include reference="qAl-xl-kip"/>
                                 <include reference="6Es-Lc-MF5"/>
                                 <include reference="fpf-6g-l5V"/>
-                                <include reference="Ijz-iO-mZx"/>
-                                <include reference="lb4-My-e2c"/>
+                                <include reference="emk-2g-hqc"/>
+                                <include reference="xdl-uI-eaS"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="C0C-cp-v2M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RDo-hr-OaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1312.5" y="345.75"/>
+            <point key="canvasLocation" x="-370.5" y="375.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HvJ-bO-SQI">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRL-hR-fKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DY0-cX-6fa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rio-gQ-vBj">
@@ -790,12 +801,11 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Ptz-NO-uV6" kind="relationship" relationship="rootViewController" id="IUr-ch-euI"/>
+                        <segue destination="7Gz-34-2vf" kind="relationship" relationship="rootViewController" id="ray-gM-MT5"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GRL-hR-fKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-498" y="357.75"/>
+            <point key="canvasLocation" x="-1221" y="375.75"/>
         </scene>
     </scenes>
     <resources>
@@ -804,4 +814,7 @@
         <image name="museum1.png" width="512" height="512"/>
         <image name="teatro1.png" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lXj-5L-o5s"/>
+    </inferredMetricsTieBreakers>
 </document>

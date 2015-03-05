@@ -13,4 +13,5 @@
 
 @property NSMutableArray *objetos;
 @property LocalizationManager *locMan;
+@property NSString *categoria;
 @end
