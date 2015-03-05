@@ -16,7 +16,7 @@
 
 @implementation DescView
 
-@synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan;
+@synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan,img1,img2,img3;
 
 //ScrollView
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -31,23 +31,26 @@
     
     [super viewDidLoad];
     
-    //ScrollView
-    for (int i=0; i<4; i++) {
-        
-        UIImageView *imagens = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",i]]];
-        
-        imagens.frame = CGRectMake((i-1)*320, 0, 320, 460);
-        
-        [scrollImages addSubview:imagens];
-
-    }
     
+    //Imagens do Scrollview.
     scrollImages.delegate = self;
-    scrollImages.contentSize = CGSizeMake(320*3, 460);
+    scrollImages.contentSize = CGSizeMake(360*3, 227);
     scrollImages.pagingEnabled = YES;
     
     pageImages.numberOfPages=3;
     pageImages.currentPage = 0;
+    
+    UIImageView *view1 = [[UIImageView alloc] init];
+    [view1 setImage:img1];
+    [scrollImages addSubview:view1];
+    
+    UIImageView *view2 = [[UIImageView alloc] init];
+    [view1 setImage:img2];
+    [scrollImages addSubview:view2];
+    
+    UIImageView *view3 = [[UIImageView alloc] init];
+    [view1 setImage:img3];
+    [scrollImages addSubview:view3];
     
     //banco de dados
     locMan = [LocalizationManager instance];
@@ -88,6 +91,50 @@
 -(void)update:(PFObject *)idados
 {
     dados = idados;
+    PFFile *obj1 = dados[@"img1"];
+    [obj1 getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error)
+    {
+        if (!error)
+        {
+            img1 = [UIImage imageWithData:imageData];
+            UIImageView *Simagens = [[UIImageView alloc] initWithImage:img1];
+            Simagens.frame = CGRectMake(0, 0,343,scrollImages.frame.size.height);
+            NSLog(@"frame: %f",scrollImages.frame.size.width);
+            Simagens.contentMode = UIViewContentModeScaleAspectFit;
+            
+            //Simagens.frame = CGRectMake((1-1)*360, 0, 360, 227);
+            
+            [scrollImages addSubview:Simagens];
+        }
+    }];
+    
+    obj1 = dados[@"img2"];
+    [obj1 getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error)
+     {
+         if (!error)
+         {
+             img2 = [UIImage imageWithData:imageData];
+             UIImageView *Simagens = [[UIImageView alloc] initWithImage:img2];
+             
+             Simagens.frame = CGRectMake(scrollImages.frame.size.width, 0,scrollImages.frame.size.width,scrollImages.frame.size.height);
+             Simagens.contentMode = UIViewContentModeScaleAspectFit;
+             
+             [scrollImages addSubview:Simagens];
+         }
+     }];
+    
+    obj1 = dados[@"img3"];
+    [obj1 getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error)
+     {
+         if (!error)
+         {
+             img3 = [UIImage imageWithData:imageData];
+             UIImageView *Simagens = [[UIImageView alloc] initWithImage:img3];
+             Simagens.frame = CGRectMake(2*scrollImages.frame.size.width, 0,scrollImages.frame.size.width,scrollImages.frame.size.height);
+             Simagens.contentMode = UIViewContentModeScaleAspectFit;
+             [scrollImages addSubview:Simagens];
+         }
+     }];
 }
 
 - (IBAction)compartilharFace:(id)sender {

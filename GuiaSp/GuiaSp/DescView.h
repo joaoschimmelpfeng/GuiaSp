@@ -29,6 +29,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *preco;
 @property LocalizationManager *locMan;
 @property PFObject *dados;
+@property UIImage *img1;
+@property UIImage *img2;
+@property UIImage *img3;
 -(void)update:(PFObject *)idados;
 - (IBAction)compartilharFace:(id)sender;
 - (IBAction)compartilharTwitter:(id)sender;

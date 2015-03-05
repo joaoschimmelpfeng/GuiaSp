@@ -71,17 +71,6 @@
     latitude = dados[@"latitude"];
     longitude = dados[@"longitude"];
 }
-//
-//-(void)viewWillAppear:(BOOL)animated
-//{
-//    MKCoordinateRegion referencia = {{0.0,0.0},{0.0,0.0}};
-//    referencia.center.latitude = [latitude doubleValue];
-//    referencia.center.longitude = [longitude doubleValue];
-//    ponto = [[MKPointAnnotation alloc]init];
-//    ponto.coordinate = referencia.center;
-//    [self tracaRota];
-//    
-//}
 
 -(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
     
