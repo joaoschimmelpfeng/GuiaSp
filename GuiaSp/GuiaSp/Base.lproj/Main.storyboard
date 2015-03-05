@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -615,6 +615,170 @@
             </objects>
             <point key="canvasLocation" x="2424" y="864.75"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4oU-hV-Kcg">
+            <objects>
+                <viewController id="7Gz-34-2vf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q0I-cG-xGo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xat-Ot-Mx8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DrL-8T-Sfs">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="prr-nR-gq9">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Rj8-BO-o7X"/>
+                                    <constraint firstAttribute="width" constant="400" id="Tox-0P-rtu"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Rj8-BO-o7X"/>
+                                        <exclude reference="Tox-0P-rtu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-7" y="162" width="400" height="400"/>
+                                    <mask key="constraints">
+                                        <include reference="Rj8-BO-o7X"/>
+                                        <include reference="Tox-0P-rtu"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUB-uc-AtC">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="4xN-Iq-8nf"/>
+                                    <constraint firstAttribute="width" constant="144" id="NKa-cT-2tY"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="museum1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4xN-Iq-8nf"/>
+                                        <exclude reference="NKa-cT-2tY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="27" y="200" width="143" height="144"/>
+                                    <mask key="constraints">
+                                        <include reference="4xN-Iq-8nf"/>
+                                        <include reference="NKa-cT-2tY"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeH-Gj-a5u">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="F5u-vo-aua"/>
+                                    <constraint firstAttribute="height" constant="159" id="QXy-Un-Y0W">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="144"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Button" image="bar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="F5u-vo-aua"/>
+                                        <exclude reference="QXy-Un-Y0W"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="197" y="193" width="176" height="159"/>
+                                    <mask key="constraints">
+                                        <include reference="F5u-vo-aua"/>
+                                        <include reference="QXy-Un-Y0W"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50P-Kz-2IK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="3ax-qQ-Rl8"/>
+                                    <constraint firstAttribute="width" constant="144" id="6o2-et-n3n"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="teatro1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3ax-qQ-Rl8"/>
+                                        <exclude reference="6o2-et-n3n"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="18" y="374" width="160" height="160"/>
+                                    <mask key="constraints">
+                                        <include reference="3ax-qQ-Rl8"/>
+                                        <include reference="6o2-et-n3n"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AUB-uc-AtC" firstAttribute="top" secondItem="q0I-cG-xGo" secondAttribute="bottom" constant="180" id="1Li-cp-xaM">
+                                <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="OeH-Gj-a5u" secondAttribute="trailing" constant="11" id="6Es-Lc-MF5">
+                                <variation key="heightClass=regular-widthClass=compact" constant="9"/>
+                            </constraint>
+                            <constraint firstItem="50P-Kz-2IK" firstAttribute="top" secondItem="AUB-uc-AtC" secondAttribute="bottom" constant="30" id="Ijz-iO-mZx">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="prr-nR-gq9" secondAttribute="centerY" id="emk-2g-hqc"/>
+                            <constraint firstItem="OeH-Gj-a5u" firstAttribute="top" secondItem="q0I-cG-xGo" secondAttribute="bottom" constant="150" id="fpf-6g-l5V"/>
+                            <constraint firstItem="50P-Kz-2IK" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="8" id="lb4-My-e2c"/>
+                            <constraint firstItem="AUB-uc-AtC" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="11" id="qAl-xl-kip">
+                                <variation key="heightClass=regular-widthClass=compact" constant="9"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="prr-nR-gq9" secondAttribute="centerX" id="xdl-uI-eaS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="prr-nR-gq9"/>
+                                <exclude reference="AUB-uc-AtC"/>
+                                <exclude reference="OeH-Gj-a5u"/>
+                                <exclude reference="50P-Kz-2IK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="emk-2g-hqc"/>
+                                <exclude reference="xdl-uI-eaS"/>
+                                <exclude reference="1Li-cp-xaM"/>
+                                <exclude reference="qAl-xl-kip"/>
+                                <exclude reference="6Es-Lc-MF5"/>
+                                <exclude reference="fpf-6g-l5V"/>
+                                <exclude reference="Ijz-iO-mZx"/>
+                                <exclude reference="lb4-My-e2c"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="prr-nR-gq9"/>
+                                <include reference="AUB-uc-AtC"/>
+                                <include reference="OeH-Gj-a5u"/>
+                                <include reference="50P-Kz-2IK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="emk-2g-hqc"/>
+                                <include reference="xdl-uI-eaS"/>
+                                <include reference="1Li-cp-xaM"/>
+                                <include reference="qAl-xl-kip"/>
+                                <include reference="6Es-Lc-MF5"/>
+                                <include reference="fpf-6g-l5V"/>
+                                <include reference="Ijz-iO-mZx"/>
+                                <include reference="lb4-My-e2c"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RDo-hr-OaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1312.5" y="345.75"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HvJ-bO-SQI">
             <objects>
@@ -634,4 +798,10 @@
             <point key="canvasLocation" x="-498" y="357.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bar.png" width="512" height="512"/>
+        <image name="fundo.png" width="500" height="500"/>
+        <image name="museum1.png" width="512" height="512"/>
+        <image name="teatro1.png" width="512" height="512"/>
+    </resources>
 </document>

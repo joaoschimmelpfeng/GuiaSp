@@ -15,6 +15,10 @@
 		D4087D1E1AA66BBE00CE61C2 /* icon1800.png in Resources */ = {isa = PBXBuildFile; fileRef = D4087D1D1AA66BBE00CE61C2 /* icon1800.png */; };
 		D4087D211AA66C6A00CE61C2 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = D4087D1F1AA66C6A00CE61C2 /* icon80.png */; };
 		D4087D221AA66C6A00CE61C2 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = D4087D201AA66C6A00CE61C2 /* icon120.png */; };
+		D41323201AA8E62F00C77C71 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = D413231C1AA8E62F00C77C71 /* bar.png */; };
+		D41323211AA8E62F00C77C71 /* fundo.png in Resources */ = {isa = PBXBuildFile; fileRef = D413231D1AA8E62F00C77C71 /* fundo.png */; };
+		D41323221AA8E62F00C77C71 /* museum1.png in Resources */ = {isa = PBXBuildFile; fileRef = D413231E1AA8E62F00C77C71 /* museum1.png */; };
+		D41323231AA8E62F00C77C71 /* teatro1.png in Resources */ = {isa = PBXBuildFile; fileRef = D413231F1AA8E62F00C77C71 /* teatro1.png */; };
 		E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4501AA6211B008BC9A7 /* LocalizationManager.m */; };
 		E634F45A1AA63A44008BC9A7 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4591AA63A44008BC9A7 /* TabBarController.m */; };
 		E634F45D1AA63C42008BC9A7 /* DescView.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F45C1AA63C42008BC9A7 /* DescView.m */; };
@@ -64,6 +68,10 @@
 		D4087D1D1AA66BBE00CE61C2 /* icon1800.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1800.png; path = Images.xcassets/icon1800.png; sourceTree = "<group>"; };
 		D4087D1F1AA66C6A00CE61C2 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon80.png; path = Images.xcassets/icon80.png; sourceTree = "<group>"; };
 		D4087D201AA66C6A00CE61C2 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon120.png; path = Images.xcassets/icon120.png; sourceTree = "<group>"; };
+		D413231C1AA8E62F00C77C71 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = GuiaSp/Images.xcassets/bar.png; sourceTree = "<group>"; };
+		D413231D1AA8E62F00C77C71 /* fundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fundo.png; path = GuiaSp/Images.xcassets/fundo.png; sourceTree = "<group>"; };
+		D413231E1AA8E62F00C77C71 /* museum1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = museum1.png; path = GuiaSp/Images.xcassets/museum1.png; sourceTree = "<group>"; };
+		D413231F1AA8E62F00C77C71 /* teatro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = teatro1.png; path = GuiaSp/Images.xcassets/teatro1.png; sourceTree = "<group>"; };
 		E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
 		E634F4501AA6211B008BC9A7 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
 		E634F4521AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -145,6 +153,10 @@
 		E67160B91AA0DFA9007A970D = {
 			isa = PBXGroup;
 			children = (
+				D413231C1AA8E62F00C77C71 /* bar.png */,
+				D413231D1AA8E62F00C77C71 /* fundo.png */,
+				D413231E1AA8E62F00C77C71 /* museum1.png */,
+				D413231F1AA8E62F00C77C71 /* teatro1.png */,
 				D4087D111AA64C4800CE61C2 /* icone.png */,
 				E6E60E641AA60EBE00DED4B3 /* libsqlite3.dylib */,
 				E6E60E621AA60EB300DED4B3 /* libz.dylib */,
@@ -316,13 +328,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41323201AA8E62F00C77C71 /* bar.png in Resources */,
 				D4087D211AA66C6A00CE61C2 /* icon80.png in Resources */,
 				E67160D11AA0DFAA007A970D /* Main.storyboard in Resources */,
 				D4087D221AA66C6A00CE61C2 /* icon120.png in Resources */,
 				E6A7D3591AA4EB6E00F3F543 /* Localizable.strings in Resources */,
 				D4087D181AA66A6600CE61C2 /* Images.xcassets in Resources */,
+				D41323231AA8E62F00C77C71 /* teatro1.png in Resources */,
 				D4087D1E1AA66BBE00CE61C2 /* icon1800.png in Resources */,
 				E67160D61AA0DFAA007A970D /* LaunchScreen.xib in Resources */,
+				D41323211AA8E62F00C77C71 /* fundo.png in Resources */,
+				D41323221AA8E62F00C77C71 /* museum1.png in Resources */,
 				D4087D121AA64C4800CE61C2 /* icone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
