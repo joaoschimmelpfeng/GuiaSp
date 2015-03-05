@@ -64,7 +64,7 @@
     else
     {
         desc.text = dados[@"descEng"];
-        funcionamento.text =[NSString stringWithFormat:@"Funcionamento: %@",dados[@"funcionamentoEng"]];
+        funcionamento.text =[NSString stringWithFormat:@"Operation: %@",dados[@"funcionamentoEng"]];
         preco.text =[NSString stringWithFormat:@"Preco: %@",dados[@"precoEng"]];
     }
     
@@ -99,11 +99,6 @@
             img1 = [UIImage imageWithData:imageData];
             UIImageView *Simagens = [[UIImageView alloc] initWithImage:img1];
             Simagens.frame = CGRectMake(0, 0,343,scrollImages.frame.size.height);
-            NSLog(@"frame: %f",scrollImages.frame.size.width);
-            Simagens.contentMode = UIViewContentModeScaleAspectFit;
-            
-            //Simagens.frame = CGRectMake((1-1)*360, 0, 360, 227);
-            
             [scrollImages addSubview:Simagens];
         }
     }];
@@ -117,7 +112,6 @@
              UIImageView *Simagens = [[UIImageView alloc] initWithImage:img2];
              
              Simagens.frame = CGRectMake(scrollImages.frame.size.width, 0,scrollImages.frame.size.width,scrollImages.frame.size.height);
-             Simagens.contentMode = UIViewContentModeScaleAspectFit;
              
              [scrollImages addSubview:Simagens];
          }
@@ -131,7 +125,9 @@
              img3 = [UIImage imageWithData:imageData];
              UIImageView *Simagens = [[UIImageView alloc] initWithImage:img3];
              Simagens.frame = CGRectMake(2*scrollImages.frame.size.width, 0,scrollImages.frame.size.width,scrollImages.frame.size.height);
-             Simagens.contentMode = UIViewContentModeScaleAspectFit;
+             
+             scrollImages.maximumZoomScale = Simagens.image.size.width / scrollImages.frame.size.width;
+             scrollImages.zoomScale = 1.0;
              [scrollImages addSubview:Simagens];
          }
      }];
@@ -202,7 +198,8 @@ self.pageImages.currentPage = page;
     
     }
     
-- (IBAction)mudarPag:(id)sender {
+- (IBAction)mudarPag:(id)sender
+{
     
 // update the scroll view to the appropriate page
     
