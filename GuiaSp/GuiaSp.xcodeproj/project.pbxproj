@@ -25,6 +25,8 @@
 		D440364B1AAA2A4F0096A48D /* define_location-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D440364A1AAA2A4F0096A48D /* define_location-50.png */; };
 		D440364E1AAA2D280096A48D /* facebook-32.png in Resources */ = {isa = PBXBuildFile; fileRef = D440364C1AAA2D280096A48D /* facebook-32.png */; };
 		D440364F1AAA2D280096A48D /* twitter-32.png in Resources */ = {isa = PBXBuildFile; fileRef = D440364D1AAA2D280096A48D /* twitter-32.png */; };
+		D44036521AAA35200096A48D /* AnucieView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44036511AAA35200096A48D /* AnucieView.m */; };
+		D44036541AAA41430096A48D /* sent-32.png in Resources */ = {isa = PBXBuildFile; fileRef = D44036531AAA41430096A48D /* sent-32.png */; };
 		E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4501AA6211B008BC9A7 /* LocalizationManager.m */; };
 		E634F45A1AA63A44008BC9A7 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4591AA63A44008BC9A7 /* TabBarController.m */; };
 		E634F45D1AA63C42008BC9A7 /* DescView.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F45C1AA63C42008BC9A7 /* DescView.m */; };
@@ -85,6 +87,9 @@
 		D440364A1AAA2A4F0096A48D /* define_location-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "define_location-50.png"; path = "GuiaSp/Images.xcassets/define_location-50.png"; sourceTree = "<group>"; };
 		D440364C1AAA2D280096A48D /* facebook-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook-32.png"; path = "GuiaSp/Images.xcassets/facebook-32.png"; sourceTree = "<group>"; };
 		D440364D1AAA2D280096A48D /* twitter-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter-32.png"; path = "GuiaSp/Images.xcassets/twitter-32.png"; sourceTree = "<group>"; };
+		D44036501AAA35200096A48D /* AnucieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnucieView.h; sourceTree = "<group>"; };
+		D44036511AAA35200096A48D /* AnucieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnucieView.m; sourceTree = "<group>"; };
+		D44036531AAA41430096A48D /* sent-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sent-32.png"; path = "GuiaSp/Images.xcassets/sent-32.png"; sourceTree = "<group>"; };
 		E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
 		E634F4501AA6211B008BC9A7 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
 		E634F4521AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -168,6 +173,7 @@
 		E67160B91AA0DFA9007A970D = {
 			isa = PBXGroup;
 			children = (
+				D44036531AAA41430096A48D /* sent-32.png */,
 				D440364C1AAA2D280096A48D /* facebook-32.png */,
 				D440364D1AAA2D280096A48D /* twitter-32.png */,
 				D440364A1AAA2A4F0096A48D /* define_location-50.png */,
@@ -219,6 +225,8 @@
 				E67160CA1AA0DFAA007A970D /* AppDelegate.m */,
 				E67160CC1AA0DFAA007A970D /* mapView.h */,
 				E67160CD1AA0DFAA007A970D /* mapView.m */,
+				D44036501AAA35200096A48D /* AnucieView.h */,
+				D44036511AAA35200096A48D /* AnucieView.m */,
 				104BD5AC1AA4F9FE00FE79F8 /* TableViewController.h */,
 				104BD5AD1AA4F9FE00FE79F8 /* TableViewController.m */,
 				E634F45E1AA64088008BC9A7 /* TableViewCell.h */,
@@ -356,6 +364,7 @@
 				D4087D211AA66C6A00CE61C2 /* icon80.png in Resources */,
 				E67160D11AA0DFAA007A970D /* Main.storyboard in Resources */,
 				D4087D221AA66C6A00CE61C2 /* icon120.png in Resources */,
+				D44036541AAA41430096A48D /* sent-32.png in Resources */,
 				E6A7D3591AA4EB6E00F3F543 /* Localizable.strings in Resources */,
 				D4087D181AA66A6600CE61C2 /* Images.xcassets in Resources */,
 				D41323231AA8E62F00C77C71 /* teatro1.png in Resources */,
@@ -391,6 +400,7 @@
 				E67160CB1AA0DFAA007A970D /* AppDelegate.m in Sources */,
 				E67160C81AA0DFAA007A970D /* main.m in Sources */,
 				E634F4601AA64088008BC9A7 /* TableViewCell.m in Sources */,
+				D44036521AAA35200096A48D /* AnucieView.m in Sources */,
 				104BD5AE1AA4F9FE00FE79F8 /* TableViewController.m in Sources */,
 				E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */,
 				E6F77E5F1AA8EBA600FDB021 /* FirstView.m in Sources */,
