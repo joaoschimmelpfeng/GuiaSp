@@ -12,6 +12,7 @@
 
 @interface TableViewCell : UITableViewCell
 
+@property (weak, nonatomic)IBOutlet UIImageView *iconesTableView;
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *categoria;
 @property PFObject *bdData;

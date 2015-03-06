@@ -11,7 +11,7 @@
 #import "LocalizationManager.h"
 
 @implementation TableViewCell
-@synthesize nome,categoria,bdData,locMan;
+@synthesize nome,categoria,bdData,locMan,iconesTableView;
 
 - (void)awakeFromNib
 {
@@ -38,6 +38,20 @@
     {
      categoria.text = objeto[@"categoriaEng"];
     }
+    
+    //imagens das categorias na tableView.
+    if ([objeto[@"categoria"] isEqualToString:@"Bar"]) {
+    
+        [iconesTableView setImage:[UIImage imageNamed:@"bar.png"]];
+    }
+    
+    else if ([objeto[@"categoria" ] isEqualToString:@"Museu"]) {
+        [iconesTableView setImage:[UIImage imageNamed:@"museum1.png"]];    }
+    
+    else {
+        [iconesTableView setImage:[UIImage imageNamed:@"teatro.png"]];
+    }
+    
 }
 
 @end
