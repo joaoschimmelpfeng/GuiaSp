@@ -16,7 +16,7 @@
 @end
 
 @implementation mapView
-@synthesize mapa, locationManager,ponto,latitude,longitude,dados;
+@synthesize mapa, locationManager,ponto,latitude,longitude,dados, usuario;
 
 - (void)viewDidLoad{
 
@@ -48,7 +48,7 @@
     
     _loc = [[locations lastObject] coordinate];
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(_loc, 200, 200);
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(_loc, 400, 400);
     
     [self tracaRota];
     
@@ -163,7 +163,17 @@
 
 - (IBAction)localUser:(id)sender {
     
+    
+    MKCoordinateRegion usuario = MKCoordinateRegionMakeWithDistance(_loc, 200, 200);
+    
+    [mapa setRegion:usuario animated:YES];
 
+}
+
+- (IBAction)direction:(id)sender{
+
+    NSString *urlString = [NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%@,%@",latitude,longitude];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
 }
 
 

@@ -14,7 +14,7 @@
 @interface mapView : UIViewController<CLLocationManagerDelegate>
 
 @property CLLocationCoordinate2D loc;
-@property MKCoordinateRegion region;
+@property MKCoordinateRegion region, usuario;
 @property MKPointAnnotation *ponto;
 @property NSNumber *latitude;
 @property NSNumber *longitude;
@@ -25,6 +25,8 @@
 
 - (IBAction)Opcoes:(id)sender;
 - (IBAction)localUser:(id)sender;
+- (IBAction)direction:(id)sender;
+
 
 -(void)update:(PFObject *)idados;
 -(void)tracaRota;
