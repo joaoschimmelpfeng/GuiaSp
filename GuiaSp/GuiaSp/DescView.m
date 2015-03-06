@@ -16,7 +16,7 @@
 
 @implementation DescView
 
-@synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan,img1,img2,img3;
+@synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan,img1,img2,img3,scrollContent;
 
 //ScrollView
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {

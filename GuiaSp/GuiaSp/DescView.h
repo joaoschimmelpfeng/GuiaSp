@@ -19,6 +19,7 @@
     
 }
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollContent;
 
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *categoria;
