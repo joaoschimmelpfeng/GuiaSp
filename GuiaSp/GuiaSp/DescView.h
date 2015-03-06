@@ -21,6 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollContent;
 
+@property NSNumber *latitude, *longitude;
 @property (weak, nonatomic) IBOutlet UILabel *nome;
 @property (weak, nonatomic) IBOutlet UILabel *categoria;
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollImages;
@@ -37,5 +38,8 @@
 - (IBAction)compartilharFace:(id)sender;
 - (IBAction)compartilharTwitter:(id)sender;
 - (IBAction)mudarPag:(id)sender;
+
+- (IBAction)TracaRota:(id)sender;
+
 
 @end

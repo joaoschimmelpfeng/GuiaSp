@@ -16,7 +16,7 @@
 
 @implementation DescView
 
-@synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan,img1,img2,img3,scrollContent;
+@synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan,img1,img2,img3,scrollContent,latitude,longitude;
 
 //ScrollView
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -90,7 +90,11 @@
 
 -(void)update:(PFObject *)idados
 {
+    
     dados = idados;
+    latitude = dados[@"latitude"];
+    longitude = dados[@"longitude"];
+    
     PFFile *obj1 = dados[@"img1"];
     [obj1 getDataInBackgroundWithBlock:^(NSData *imageData, NSError *error)
     {
@@ -213,6 +217,11 @@ frame.size = self.scrollImages.frame.size;
     [self.scrollImages scrollRectToVisible:frame animated:YES];
     
     }
+
+- (IBAction)TracaRota:(id)sender {
+    NSString *urlString = [NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%@,%@",latitude,longitude];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+}
 
 
 @end
