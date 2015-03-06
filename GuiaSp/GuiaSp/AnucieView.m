@@ -73,5 +73,10 @@
 
 - (IBAction)enviar:(id)sender {
     
+    UIAlertView *confirmacaoAnucio = [[UIAlertView alloc] initWithTitle:@"GuiaSP" message:@"Obrigado por anunciar conosco." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    [confirmacaoAnucio show];
+
+    
 }
 @end
