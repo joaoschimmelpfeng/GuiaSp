@@ -24,6 +24,7 @@
 @property (retain, nonatomic)CLLocationManager *locationManager;
 
 - (IBAction)Opcoes:(id)sender;
+- (IBAction)localUser:(id)sender;
 
 -(void)update:(PFObject *)idados;
 -(void)tracaRota;
