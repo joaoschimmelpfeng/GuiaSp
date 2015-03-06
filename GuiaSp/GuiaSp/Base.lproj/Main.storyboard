@@ -1001,12 +1001,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nqm-E0-ndP">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHU-5d-dnu">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNC-Dr-viY">
                                 <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
@@ -1113,42 +1113,42 @@
                                 <exclude reference="rJg-Lv-tb0"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="F1F-ob-8gy"/>
-                                <exclude reference="Gu9-fA-e8U"/>
-                                <exclude reference="YAg-5L-WRJ"/>
-                                <exclude reference="W90-X4-15z"/>
-                                <exclude reference="fSp-NY-1z2"/>
-                                <exclude reference="oim-eM-bNx"/>
-                                <exclude reference="6Zc-b0-Cdz"/>
-                                <exclude reference="Kf3-b7-Nq0"/>
-                                <exclude reference="NaI-JR-smo"/>
-                                <exclude reference="euw-FC-z9z"/>
                                 <exclude reference="CiL-mj-WEb"/>
                                 <exclude reference="Rag-Nu-Rse"/>
                                 <exclude reference="YYo-8c-TlA"/>
                                 <exclude reference="t2c-Iq-Qe9"/>
                                 <exclude reference="x8V-An-1C0"/>
                                 <exclude reference="y3B-xN-E6p"/>
-                                <exclude reference="8HO-SQ-LDt"/>
-                                <exclude reference="AEu-JT-FLu"/>
-                                <exclude reference="Pe0-W3-bmM"/>
-                                <exclude reference="i0R-xJ-LbO"/>
-                                <exclude reference="rHS-Rm-Dky"/>
-                                <exclude reference="0C0-j4-xOx"/>
-                                <exclude reference="LQY-BE-kyp"/>
-                                <exclude reference="gk1-c0-i9k"/>
-                                <exclude reference="wgL-JU-TJW"/>
+                                <exclude reference="6Zc-b0-Cdz"/>
+                                <exclude reference="Kf3-b7-Nq0"/>
+                                <exclude reference="NaI-JR-smo"/>
+                                <exclude reference="euw-FC-z9z"/>
                                 <exclude reference="A35-Mj-jOB"/>
                                 <exclude reference="Vl9-Z6-eGq"/>
                                 <exclude reference="XJL-xf-HU2"/>
                                 <exclude reference="YfL-c2-12s"/>
                                 <exclude reference="dZ9-5b-pcN"/>
                                 <exclude reference="iOK-he-X8J"/>
+                                <exclude reference="W90-X4-15z"/>
+                                <exclude reference="fSp-NY-1z2"/>
+                                <exclude reference="oim-eM-bNx"/>
+                                <exclude reference="0C0-j4-xOx"/>
+                                <exclude reference="LQY-BE-kyp"/>
+                                <exclude reference="gk1-c0-i9k"/>
+                                <exclude reference="wgL-JU-TJW"/>
+                                <exclude reference="8HO-SQ-LDt"/>
+                                <exclude reference="AEu-JT-FLu"/>
+                                <exclude reference="Pe0-W3-bmM"/>
+                                <exclude reference="i0R-xJ-LbO"/>
+                                <exclude reference="rHS-Rm-Dky"/>
                                 <exclude reference="CLc-yu-UcP"/>
                                 <exclude reference="Hwd-9j-ohU"/>
                                 <exclude reference="Ko8-Vj-14f"/>
                                 <exclude reference="xqp-HB-buU"/>
                                 <exclude reference="yM8-L0-ILX"/>
+                                <exclude reference="F1F-ob-8gy"/>
+                                <exclude reference="Gu9-fA-e8U"/>
+                                <exclude reference="YAg-5L-WRJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1163,42 +1163,42 @@
                                 <include reference="rJg-Lv-tb0"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="F1F-ob-8gy"/>
-                                <include reference="Gu9-fA-e8U"/>
-                                <include reference="YAg-5L-WRJ"/>
-                                <include reference="W90-X4-15z"/>
-                                <include reference="fSp-NY-1z2"/>
-                                <include reference="oim-eM-bNx"/>
-                                <exclude reference="6Zc-b0-Cdz"/>
-                                <include reference="Kf3-b7-Nq0"/>
-                                <exclude reference="NaI-JR-smo"/>
-                                <include reference="euw-FC-z9z"/>
                                 <exclude reference="CiL-mj-WEb"/>
                                 <exclude reference="Rag-Nu-Rse"/>
                                 <include reference="YYo-8c-TlA"/>
                                 <include reference="t2c-Iq-Qe9"/>
                                 <include reference="x8V-An-1C0"/>
                                 <exclude reference="y3B-xN-E6p"/>
-                                <include reference="8HO-SQ-LDt"/>
-                                <exclude reference="AEu-JT-FLu"/>
-                                <include reference="Pe0-W3-bmM"/>
-                                <exclude reference="i0R-xJ-LbO"/>
-                                <exclude reference="rHS-Rm-Dky"/>
-                                <include reference="0C0-j4-xOx"/>
-                                <include reference="LQY-BE-kyp"/>
-                                <exclude reference="gk1-c0-i9k"/>
-                                <include reference="wgL-JU-TJW"/>
+                                <exclude reference="6Zc-b0-Cdz"/>
+                                <include reference="Kf3-b7-Nq0"/>
+                                <exclude reference="NaI-JR-smo"/>
+                                <include reference="euw-FC-z9z"/>
                                 <include reference="A35-Mj-jOB"/>
                                 <exclude reference="Vl9-Z6-eGq"/>
                                 <include reference="XJL-xf-HU2"/>
                                 <exclude reference="YfL-c2-12s"/>
                                 <exclude reference="dZ9-5b-pcN"/>
                                 <include reference="iOK-he-X8J"/>
+                                <include reference="W90-X4-15z"/>
+                                <include reference="fSp-NY-1z2"/>
+                                <include reference="oim-eM-bNx"/>
+                                <include reference="0C0-j4-xOx"/>
+                                <include reference="LQY-BE-kyp"/>
+                                <exclude reference="gk1-c0-i9k"/>
+                                <include reference="wgL-JU-TJW"/>
+                                <include reference="8HO-SQ-LDt"/>
+                                <exclude reference="AEu-JT-FLu"/>
+                                <include reference="Pe0-W3-bmM"/>
+                                <exclude reference="i0R-xJ-LbO"/>
+                                <exclude reference="rHS-Rm-Dky"/>
                                 <exclude reference="CLc-yu-UcP"/>
                                 <exclude reference="Hwd-9j-ohU"/>
                                 <include reference="Ko8-Vj-14f"/>
                                 <include reference="xqp-HB-buU"/>
                                 <include reference="yM8-L0-ILX"/>
+                                <include reference="F1F-ob-8gy"/>
+                                <include reference="Gu9-fA-e8U"/>
+                                <include reference="YAg-5L-WRJ"/>
                             </mask>
                         </variation>
                     </view>
@@ -1206,6 +1206,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pickerView" destination="nNC-Dr-viY" id="shI-Ad-zsq"/>
+                        <outlet property="text1" destination="Nqm-E0-ndP" id="6BD-jm-WAD"/>
+                        <outlet property="text2" destination="fHU-5d-dnu" id="fGd-Nd-SZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egH-dP-aBO" userLabel="First Responder" sceneMemberID="firstResponder"/>

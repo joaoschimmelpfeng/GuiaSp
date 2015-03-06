@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AnucieView : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface AnucieView : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate>
 
 @property NSArray *pickerData;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 - (IBAction)enviar:(id)sender;
 
+
+@property (weak, nonatomic) IBOutlet UITextField *text1;
+@property (weak, nonatomic) IBOutlet UITextField *text2;
 
 @end

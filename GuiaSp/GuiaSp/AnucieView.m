@@ -13,11 +13,12 @@
 @end
 
 @implementation AnucieView
-@synthesize pickerView,pickerData;
+@synthesize pickerView,pickerData,text2,text1;
 
 - (void)viewDidLoad {
 
-    
+    text1.delegate = self;
+    text2.delegate = self;
     pickerData = @[@"Bar/Balada",@"Teatro", @"Museu"];
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;
@@ -56,6 +57,19 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (BOOL)textFieldShouldReturn:(UITextField*)textField
+{
+  //  if (textField == text1){
+     //   text2.
+    //}
+    [text1 resignFirstResponder];
+    [text2 resignFirstResponder];
+    return YES;
+}
+
+
 
 - (IBAction)enviar:(id)sender {
     
