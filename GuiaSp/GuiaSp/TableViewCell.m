@@ -49,7 +49,7 @@
         [iconesTableView setImage:[UIImage imageNamed:@"museum1.png"]];    }
     
     else {
-        [iconesTableView setImage:[UIImage imageNamed:@"teatro.png"]];
+        [iconesTableView setImage:[UIImage imageNamed:@"teatro1.png"]];
     }
     
 }
