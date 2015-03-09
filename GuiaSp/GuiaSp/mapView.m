@@ -16,7 +16,7 @@
 @end
 
 @implementation mapView
-@synthesize mapa, locationManager,ponto,latitude,longitude,dados, usuario;
+@synthesize mapa, locationManager,ponto,latitude,longitude,dados, usuario, distancia;
 
 - (void)viewDidLoad{
 
@@ -108,9 +108,15 @@
             NSLog(@"Erro ao buscar rota: %@",error.debugDescription);
         } else {
             NSArray *arrRoutes = [response routes];
-            for (MKRoute *route in arrRoutes) {
+            MKRoute *route;
+            float  aux = 0;
+            for (route in arrRoutes) {
                 [mapa addOverlay:route.polyline level:MKOverlayLevelAboveRoads];
+                aux += route.distance;
             }
+            
+            distancia.text =[ NSString stringWithFormat:@"%.0f m",aux ];
+           // NSLog(@"Total Distance (in Meters) :%f",aux);
         }
         
         //        NSLog(@"response = %@",response);

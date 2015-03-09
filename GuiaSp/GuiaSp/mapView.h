@@ -22,6 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapa;
 @property (retain, nonatomic)CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UILabel *distancia;
 
 - (IBAction)Opcoes:(id)sender;
 - (IBAction)localUser:(id)sender;
