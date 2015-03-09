@@ -856,9 +856,6 @@
                                 <state key="normal" image="customer_support-104.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="200" y="438" width="159" height="104"/>
-                                </variation>
                                 <connections>
                                     <segue destination="B3i-1Y-J6Q" kind="show" id="8Qt-J5-NaW"/>
                                 </connections>
@@ -870,10 +867,13 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.48663413719999998" green="0.46870726769999999" blue="0.89214479349999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="29" y="83" width="343" height="138"/>
-                                </variation>
                             </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="RXP-VO-MKN">
+                                <rect key="frame" x="0.0" y="-50" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="7Gz-34-2vf" id="lZF-NC-T7x"/>
+                                </connections>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" red="0.80201233444705733" green="0.82196533030030949" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -888,6 +888,7 @@
                             <constraint firstItem="AUB-uc-AtC" firstAttribute="top" secondItem="q0I-cG-xGo" secondAttribute="bottom" constant="176" id="5Y6-gu-DbX">
                                 <variation key="heightClass=regular-widthClass=compact" constant="160"/>
                             </constraint>
+                            <constraint firstItem="RXP-VO-MKN" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="24" id="5dE-sE-cy9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OeH-Gj-a5u" secondAttribute="trailing" constant="11" id="6Es-Lc-MF5">
                                 <variation key="heightClass=regular-widthClass=compact" constant="9"/>
                             </constraint>
@@ -898,6 +899,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="50P-Kz-2IK" secondAttribute="trailing" constant="204" id="9fI-23-PeG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OeH-Gj-a5u" secondAttribute="trailing" constant="22" id="Bdp-wt-yQq"/>
                             <constraint firstItem="Xat-Ot-Mx8" firstAttribute="top" secondItem="OeH-Gj-a5u" secondAttribute="bottom" constant="416" id="EdV-Ds-F98"/>
+                            <constraint firstAttribute="centerX" secondItem="RXP-VO-MKN" secondAttribute="centerX" id="H8o-FG-bBn"/>
                             <constraint firstItem="50P-Kz-2IK" firstAttribute="top" secondItem="AUB-uc-AtC" secondAttribute="bottom" constant="30" id="Ijz-iO-mZx">
                                 <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                             </constraint>
@@ -923,7 +925,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="90"/>
                             </constraint>
                             <constraint firstItem="OeH-Gj-a5u" firstAttribute="leading" secondItem="AUB-uc-AtC" secondAttribute="trailing" constant="38" id="bcj-Na-S0F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RXP-VO-MKN" secondAttribute="trailing" constant="24" id="dmE-ib-jCx"/>
                             <constraint firstItem="GNd-hW-bNb" firstAttribute="top" secondItem="OeH-Gj-a5u" secondAttribute="bottom" constant="132" id="e2v-JY-OnZ"/>
+                            <constraint firstItem="Xat-Ot-Mx8" firstAttribute="top" secondItem="RXP-VO-MKN" secondAttribute="bottom" id="e7U-a5-dqw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GNd-hW-bNb" secondAttribute="trailing" constant="161" id="es8-Hh-rTG"/>
                             <constraint firstAttribute="centerX" secondItem="AUB-uc-AtC" secondAttribute="centerX" id="fTL-vH-nvv">
                                 <variation key="heightClass=regular-widthClass=compact" constant="80"/>
@@ -935,6 +939,7 @@
                             <constraint firstItem="OeH-Gj-a5u" firstAttribute="top" secondItem="q0I-cG-xGo" secondAttribute="bottom" constant="176" id="iq5-ya-aRG"/>
                             <constraint firstItem="AUB-uc-AtC" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="20" id="kHR-6J-grE"/>
                             <constraint firstItem="50P-Kz-2IK" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="8" id="lb4-My-e2c"/>
+                            <constraint firstItem="Xat-Ot-Mx8" firstAttribute="top" secondItem="RXP-VO-MKN" secondAttribute="bottom" constant="8" id="mLY-C1-hCp"/>
                             <constraint firstItem="50P-Kz-2IK" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="20" id="n6T-bI-TYk"/>
                             <constraint firstItem="AUB-uc-AtC" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="20" id="nko-ek-mrk"/>
                             <constraint firstItem="AUB-uc-AtC" firstAttribute="leading" secondItem="DrL-8T-Sfs" secondAttribute="leadingMargin" constant="11" id="qAl-xl-kip">
@@ -951,6 +956,7 @@
                                 <exclude reference="AUB-uc-AtC"/>
                                 <exclude reference="GNd-hW-bNb"/>
                                 <exclude reference="72U-bO-wJe"/>
+                                <exclude reference="RXP-VO-MKN"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="73S-HC-ZNz"/>
@@ -990,10 +996,15 @@
                                 <exclude reference="es8-Hh-rTG"/>
                                 <exclude reference="r4W-X6-SmU"/>
                                 <exclude reference="vCD-if-EJr"/>
+                                <exclude reference="5dE-sE-cy9"/>
+                                <exclude reference="H8o-FG-bBn"/>
+                                <exclude reference="dmE-ib-jCx"/>
                                 <exclude reference="1VQ-lt-gOe"/>
                                 <exclude reference="7tn-U2-uat"/>
                                 <exclude reference="EdV-Ds-F98"/>
                                 <exclude reference="Z1c-1c-F7h"/>
+                                <exclude reference="e7U-a5-dqw"/>
+                                <exclude reference="mLY-C1-hCp"/>
                                 <exclude reference="tLu-3k-tBb"/>
                             </mask>
                         </variation>
@@ -1004,6 +1015,7 @@
                                 <include reference="AUB-uc-AtC"/>
                                 <include reference="GNd-hW-bNb"/>
                                 <include reference="72U-bO-wJe"/>
+                                <include reference="RXP-VO-MKN"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="73S-HC-ZNz"/>
@@ -1043,10 +1055,15 @@
                                 <exclude reference="es8-Hh-rTG"/>
                                 <include reference="r4W-X6-SmU"/>
                                 <exclude reference="vCD-if-EJr"/>
+                                <exclude reference="5dE-sE-cy9"/>
+                                <include reference="H8o-FG-bBn"/>
+                                <exclude reference="dmE-ib-jCx"/>
                                 <exclude reference="1VQ-lt-gOe"/>
                                 <exclude reference="7tn-U2-uat"/>
                                 <exclude reference="EdV-Ds-F98"/>
                                 <exclude reference="Z1c-1c-F7h"/>
+                                <include reference="e7U-a5-dqw"/>
+                                <exclude reference="mLY-C1-hCp"/>
                                 <exclude reference="tLu-3k-tBb"/>
                             </mask>
                         </variation>

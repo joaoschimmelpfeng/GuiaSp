@@ -27,6 +27,7 @@
 		D44036521AAA35200096A48D /* AnucieView.m in Sources */ = {isa = PBXBuildFile; fileRef = D44036511AAA35200096A48D /* AnucieView.m */; };
 		D44036541AAA41430096A48D /* sent-32.png in Resources */ = {isa = PBXBuildFile; fileRef = D44036531AAA41430096A48D /* sent-32.png */; };
 		D4406E001AACAC8900D2D584 /* customer_support-104.png in Resources */ = {isa = PBXBuildFile; fileRef = D4406DFF1AACAC8900D2D584 /* customer_support-104.png */; };
+		D4406E021AACF0F800D2D584 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4406E011AACF0F800D2D584 /* iAd.framework */; };
 		E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4501AA6211B008BC9A7 /* LocalizationManager.m */; };
 		E634F45A1AA63A44008BC9A7 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4591AA63A44008BC9A7 /* TabBarController.m */; };
 		E634F45D1AA63C42008BC9A7 /* DescView.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F45C1AA63C42008BC9A7 /* DescView.m */; };
@@ -90,6 +91,7 @@
 		D44036511AAA35200096A48D /* AnucieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnucieView.m; sourceTree = "<group>"; };
 		D44036531AAA41430096A48D /* sent-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sent-32.png"; path = "GuiaSp/Images.xcassets/sent-32.png"; sourceTree = "<group>"; };
 		D4406DFF1AACAC8900D2D584 /* customer_support-104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "customer_support-104.png"; path = "GuiaSp/Images.xcassets/customer_support-104.png"; sourceTree = "<group>"; };
+		D4406E011AACF0F800D2D584 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
 		E634F4501AA6211B008BC9A7 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
 		E634F4521AA627C0008BC9A7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4406E021AACF0F800D2D584 /* iAd.framework in Frameworks */,
 				E6E60E651AA60EBE00DED4B3 /* libsqlite3.dylib in Frameworks */,
 				E6E60E631AA60EB300DED4B3 /* libz.dylib in Frameworks */,
 				E6E60E611AA60EA300DED4B3 /* SystemConfiguration.framework in Frameworks */,
@@ -187,6 +190,7 @@
 				D4087D111AA64C4800CE61C2 /* icone.png */,
 				E6E60E641AA60EBE00DED4B3 /* libsqlite3.dylib */,
 				E6E60E621AA60EB300DED4B3 /* libz.dylib */,
+				D4406E011AACF0F800D2D584 /* iAd.framework */,
 				E6E60E601AA60EA300DED4B3 /* SystemConfiguration.framework */,
 				E6E60E5E1AA60E8F00DED4B3 /* StoreKit.framework */,
 				E6E60E5C1AA60E8A00DED4B3 /* Security.framework */,
