@@ -7,8 +7,6 @@
 //
 
 #import "mapView.h"
-#import <Parse/Parse.h>
-#import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
 @interface mapView ()

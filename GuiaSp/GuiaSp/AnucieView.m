@@ -73,6 +73,26 @@
 
 - (IBAction)enviar:(id)sender {
     
+    if([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
+        mailCont.mailComposeDelegate = self;        // Required to invoke mailComposeController when send
+        NSString *messageBody;
+        
+        
+        if ((text2.text ==nil)&&(text1.text==nil)) {
+            return;
+        }else{
+            messageBody = (@" Nome : %@ /n Email: %@",text1.text,text2.text);
+
+        }
+        
+        [mailCont setSubject:@"Anuncio"];
+        [mailCont setToRecipients:[NSArray arrayWithObject:@"fehsb@hotmail.com"]];
+        [mailCont setMessageBody:messageBody isHTML:NO];
+        
+        [self presentViewController:mailCont animated:YES completion:nil];
+    }
+    
     UIAlertView *confirmacaoAnucio = [[UIAlertView alloc] initWithTitle:@"GuiaSP" message:@"Obrigado por anunciar conosco." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
     [confirmacaoAnucio show];
