@@ -19,7 +19,9 @@
 
     text1.delegate = self;
     text2.delegate = self;
-    pickerData = @[@"Bar/Balada",@"Teatro", @"Museu"];
+    
+    pickerData = @[@"Bar/Balada",NSLocalizedString(@"theater", nil),NSLocalizedString(@"museum", nil)];
+    
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;
     

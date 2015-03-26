@@ -1,15 +1,84 @@
 
-/* Class = "IBUISegmentedControl"; SaZ-DD-ATH.segmentTitles[0] = "Mapa"; ObjectID = "SaZ-DD-ATH"; */
+/* Class = "UILabel"; text = "--"; ObjectID = "0gB-4j-nmT"; */
+"0gB-4j-nmT.text" = "--";
+
+/* Class = "UITextView"; text = "Descricao"; ObjectID = "2h3-QE-LhF"; */
+"2h3-QE-LhF.text" = "Descricao";
+
+/* Class = "UIButton"; normalTitle = "Teatro"; ObjectID = "50P-Kz-2IK"; */
+"50P-Kz-2IK.normalTitle" = "Teatro";
+
+/* Class = "UILabel"; text = "Guia SP"; ObjectID = "72U-bO-wJe"; */
+"72U-bO-wJe.text" = "Guia SP";
+
+/* Class = "UIButton"; normalTitle = "Enviar"; ObjectID = "78R-BI-ozh"; */
+"78R-BI-ozh.normalTitle" = "Enviar";
+
+/* Class = "UIButton"; normalTitle = "Museu"; ObjectID = "AUB-uc-AtC"; */
+"AUB-uc-AtC.normalTitle" = "Museu";
+
+/* Class = "UINavigationItem"; title = "Menu"; ObjectID = "C0C-cp-v2M"; */
+"C0C-cp-v2M.title" = "Menu";
+
+/* Class = "UINavigationItem"; title = "GuiaSP"; ObjectID = "Gbc-TI-mzT"; */
+"Gbc-TI-mzT.title" = "GuiaSP";
+
+/* Class = "UILabel"; text = "Preço:"; ObjectID = "KXM-kG-G2F"; */
+"KXM-kG-G2F.text" = "Preço:";
+
+/* Class = "UITabBarItem"; title = "Descrição"; ObjectID = "KZQ-xD-af2"; */
+"KZQ-xD-af2.title" = "Descrição";
+
+/* Class = "UIButton"; normalTitle = "Bar"; ObjectID = "OeH-Gj-a5u"; */
+"OeH-Gj-a5u.normalTitle" = "Bar";
+
+/* Class = "UISegmentedControl"; SaZ-DD-ATH.segmentTitles[0] = "Map"; ObjectID = "SaZ-DD-ATH"; */
 "SaZ-DD-ATH.segmentTitles[0]" = "Mapa";
 
-/* Class = "IBUISegmentedControl"; SaZ-DD-ATH.segmentTitles[1] = "Satelite"; ObjectID = "SaZ-DD-ATH"; */
-"SaZ-DD-ATH.segmentTitles[1]" = "Satelite";
+/* Class = "UISegmentedControl"; SaZ-DD-ATH.segmentTitles[1] = "Satelite"; ObjectID = "SaZ-DD-ATH"; */
+"SaZ-DD-ATH.segmentTitles[1]" = "Satélite";
 
-/* Class = "IBUISegmentedControl"; SaZ-DD-ATH.segmentTitles[2] = "Híbrido"; ObjectID = "SaZ-DD-ATH"; */
-"SaZ-DD-ATH.segmentTitles[2]" = "Híbrido";
+/* Class = "UISegmentedControl"; SaZ-DD-ATH.segmentTitles[2] = "Hybrid"; ObjectID = "SaZ-DD-ATH"; */
+"SaZ-DD-ATH.segmentTitles[2]" = "Hibrido";
 
-/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "gJX-x2-ym4"; */
-"gJX-x2-ym4.title" = "Item";
+/* Class = "UINavigationItem"; title = "GuiaSP"; ObjectID = "SdT-GD-qmt"; */
+"SdT-GD-qmt.title" = "GuiaSP";
 
-/* Class = "IBUINavigationItem"; title = "Guia SP"; ObjectID = "v1N-VE-k8K"; */
-"v1N-VE-k8K.title" = "Guia SP";
+/* Class = "UILabel"; text = "Nome"; ObjectID = "Ssf-tE-gjA"; */
+"Ssf-tE-gjA.text" = "Nome";
+
+/* Class = "UINavigationItem"; title = "GuiaSP"; ObjectID = "Wpw-2y-Dd3"; */
+"Wpw-2y-Dd3.title" = "GuiaSP";
+
+/* Class = "UILabel"; text = "Funcionamento:"; ObjectID = "Xy5-Vm-f2V"; */
+"Xy5-Vm-f2V.text" = "Funcionamento:";
+
+/* Class = "UIButton"; normalTitle = " See Route"; ObjectID = "aES-Nx-xEb"; */
+"aES-Nx-xEb.normalTitle" = " Traçar Rota";
+
+/* Class = "UIButton"; normalTitle = "Go"; ObjectID = "gr7-qR-Jjn"; */
+"gr7-qR-Jjn.normalTitle" = "Ir";
+
+/* Class = "UILabel"; text = "Nome"; ObjectID = "gtt-zC-jWK"; */
+"gtt-zC-jWK.text" = "Nome";
+
+/* Class = "UITabBarItem"; title = "Mapa"; ObjectID = "hUj-9k-YGN"; */
+"hUj-9k-YGN.title" = "Mapa";
+
+/* Class = "UILabel"; text = "Envie seus dados e logo entraremos em contato!"; ObjectID = "lUc-Gg-qkp"; */
+"lUc-Gg-qkp.text" = "Envie seus dados e logo entraremos em contato!";
+
+/* Class = "UILabel"; text = "Nome"; ObjectID = "pEH-HZ-IIj"; */
+"pEH-HZ-IIj.text" = "Nome";
+
+/* Class = "UIButton"; normalTitle = " Facebook"; ObjectID = "qRm-j8-brg"; */
+"qRm-j8-brg.normalTitle" = " Facebook";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "rJg-Lv-tb0"; */
+"rJg-Lv-tb0.text" = "Email";
+
+/* Class = "UILabel"; text = "Categoria"; ObjectID = "tF0-b4-dIw"; */
+"tF0-b4-dIw.text" = "Categoria";
+
+/* Class = "UIButton"; normalTitle = " Twitter"; ObjectID = "yHs-QN-atd"; */
+"yHs-QN-atd.normalTitle" = " Twitter";
