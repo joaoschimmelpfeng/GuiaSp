@@ -75,6 +75,8 @@
 
 - (IBAction)enviar:(id)sender {
     
+    UIAlertView *confirmacaoAnucio = [[UIAlertView alloc] initWithTitle:@"GuiaSP" message:@"Obrigado por anunciar conosco." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
     MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
     mailCont.mailComposeDelegate = self;
     
@@ -82,25 +84,30 @@
     
         NSString *messageBody;
         
-        
-        if ((text2.text ==nil)&&(text1.text==nil)) {
-            return;
-        }else{
-            messageBody = (@" ooooooooooooooooooi   ");
+//        
+//        if ((text2.text ==nil)&&(text1.text==nil)) {
+//            return;
+//        }else{
+            messageBody = (@" Estou interessado em anunciar meu negócio ...   ");
 
-        }
+//        }
         
         [mailCont setSubject:@"Anuncio"];
-        [mailCont setToRecipients:[NSArray arrayWithObject:@"fehsb@hotmail.com"]];
+        [mailCont setToRecipients:[NSArray arrayWithObject:@"guiaspanuncio@gmail.com"]];
         [mailCont setMessageBody:messageBody isHTML:NO];
         [self presentViewController:mailCont animated:YES completion:nil];
+  
+    }else{
+        
+     [confirmacaoAnucio show];
+        
     }
     
-    UIAlertView *confirmacaoAnucio = [[UIAlertView alloc] initWithTitle:@"GuiaSP" message:@"Obrigado por anunciar conosco." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
-    [confirmacaoAnucio show];
-    text1.text =@"";
-    text2.text =@"";
+    
+//    [confirmacaoAnucio show];
+//    text1.text =@"";
+//    text2.text =@"";
 
     
 }

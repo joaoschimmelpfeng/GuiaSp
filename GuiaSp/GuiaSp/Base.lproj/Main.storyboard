@@ -885,7 +885,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="B3i-1Y-J6Q" kind="show" id="8Qt-J5-NaW"/>
+                                    <segue destination="FmO-9N-lfA" kind="show" id="Tgk-3U-dHk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guia SP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72U-bO-wJe">
@@ -1305,7 +1305,122 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egH-dP-aBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-385.5" y="1065.75"/>
+            <point key="canvasLocation" x="-1336.5" y="1089"/>
+        </scene>
+        <!--Anuncie com o Guia SP-->
+        <scene sceneID="ouh-50-l60">
+            <objects>
+                <viewController id="FmO-9N-lfA" customClass="AnucieView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="guT-h5-Nxs"/>
+                        <viewControllerLayoutGuide type="bottom" id="vDG-ub-caE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZyR-6S-rxr">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1024copy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b3z-RA-6kP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="5gs-2i-pd4">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="222" id="aX1-c5-y8d">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="160"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5gs-2i-pd4"/>
+                                        <exclude reference="aX1-c5-y8d"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="5gs-2i-pd4"/>
+                                        <include reference="aX1-c5-y8d"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtF-ja-nIE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Send" image="sent-32.png">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="132" y="457" width="137" height="32"/>
+                                </variation>
+                                <connections>
+                                    <action selector="enviar:" destination="B3i-1Y-J6Q" eventType="touchUpInside" id="1vZ-zz-ciE"/>
+                                    <action selector="enviar:" destination="FmO-9N-lfA" eventType="touchUpInside" id="ApK-Ce-D6d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send a email message to us. We will enter in contact as soon as possible" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0n-Ne-uTV">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="316" id="aZk-Kh-SCL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="aZk-Kh-SCL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="42" y="312" width="316" height="84"/>
+                                    <mask key="constraints">
+                                        <include reference="aZk-Kh-SCL"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b3z-RA-6kP" firstAttribute="top" secondItem="guT-h5-Nxs" secondAttribute="bottom" constant="44" id="21w-FA-j0n"/>
+                            <constraint firstAttribute="centerX" secondItem="I0n-Ne-uTV" secondAttribute="centerX" id="JFA-DN-hDX"/>
+                            <constraint firstAttribute="centerX" secondItem="b3z-RA-6kP" secondAttribute="centerX" id="UGh-Pr-cJB"/>
+                            <constraint firstItem="xtF-ja-nIE" firstAttribute="top" secondItem="I0n-Ne-uTV" secondAttribute="bottom" constant="61" id="hd5-7c-mVn"/>
+                            <constraint firstAttribute="centerX" secondItem="xtF-ja-nIE" secondAttribute="centerX" id="lzD-j5-wri"/>
+                            <constraint firstItem="I0n-Ne-uTV" firstAttribute="top" secondItem="b3z-RA-6kP" secondAttribute="bottom" constant="44" id="oVU-V0-OUL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="b3z-RA-6kP"/>
+                                <exclude reference="xtF-ja-nIE"/>
+                                <exclude reference="I0n-Ne-uTV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="21w-FA-j0n"/>
+                                <exclude reference="UGh-Pr-cJB"/>
+                                <exclude reference="JFA-DN-hDX"/>
+                                <exclude reference="oVU-V0-OUL"/>
+                                <exclude reference="hd5-7c-mVn"/>
+                                <exclude reference="lzD-j5-wri"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="b3z-RA-6kP"/>
+                                <include reference="xtF-ja-nIE"/>
+                                <include reference="I0n-Ne-uTV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="21w-FA-j0n"/>
+                                <include reference="UGh-Pr-cJB"/>
+                                <include reference="JFA-DN-hDX"/>
+                                <include reference="oVU-V0-OUL"/>
+                                <include reference="hd5-7c-mVn"/>
+                                <include reference="lzD-j5-wri"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anuncie com o Guia SP" id="kXV-eE-kS8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKp-2V-oX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364.5" y="1092.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HvJ-bO-SQI">
@@ -1338,6 +1453,7 @@
         <image name="customer_support-104.png" width="104" height="104"/>
         <image name="define_location-50.png" width="50" height="50"/>
         <image name="facebook-32.png" width="32" height="32"/>
+        <image name="icon1024copy.jpg" width="1024" height="1024"/>
         <image name="icon1800.png" width="180" height="180"/>
         <image name="map_marker-32.png" width="32" height="32"/>
         <image name="museum1.png" width="512" height="512"/>

@@ -31,6 +31,7 @@
 		D4B2AAB51AC59338000C2366 /* icon2-80.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AAB21AC59338000C2366 /* icon2-80.png */; };
 		D4B2AAB61AC59338000C2366 /* icon2-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AAB31AC59338000C2366 /* icon2-120.png */; };
 		D4B2AAB71AC59338000C2366 /* icon2-180.png in Resources */ = {isa = PBXBuildFile; fileRef = D4B2AAB41AC59338000C2366 /* icon2-180.png */; };
+		D4F8AD1F1AD5886000CD5F8A /* icon1024copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4F8AD1E1AD5886000CD5F8A /* icon1024copy.jpg */; };
 		D4FC295F1AC2407500350BFA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FC295E1AC2407500350BFA /* MessageUI.framework */; };
 		E634F4511AA6211B008BC9A7 /* LocalizationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4501AA6211B008BC9A7 /* LocalizationManager.m */; };
 		E634F45A1AA63A44008BC9A7 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E634F4591AA63A44008BC9A7 /* TabBarController.m */; };
@@ -99,6 +100,7 @@
 		D4B2AAB21AC59338000C2366 /* icon2-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon2-80.png"; path = "Images.xcassets/icon2-80.png"; sourceTree = "<group>"; };
 		D4B2AAB31AC59338000C2366 /* icon2-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon2-120.png"; path = "Images.xcassets/icon2-120.png"; sourceTree = "<group>"; };
 		D4B2AAB41AC59338000C2366 /* icon2-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon2-180.png"; path = "Images.xcassets/icon2-180.png"; sourceTree = "<group>"; };
+		D4F8AD1E1AD5886000CD5F8A /* icon1024copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon1024copy.jpg; path = Images.xcassets/icon1024copy.jpg; sourceTree = "<group>"; };
 		D4FC295E1AC2407500350BFA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E634F44F1AA6211B008BC9A7 /* LocalizationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizationManager.h; sourceTree = "<group>"; };
 		E634F4501AA6211B008BC9A7 /* LocalizationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizationManager.m; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				D4087D171AA66A6600CE61C2 /* Images.xcassets */,
 				D4B2AAB21AC59338000C2366 /* icon2-80.png */,
 				D4B2AAB31AC59338000C2366 /* icon2-120.png */,
+				D4F8AD1E1AD5886000CD5F8A /* icon1024copy.jpg */,
 				D4B2AAB41AC59338000C2366 /* icon2-180.png */,
 				D4087D1F1AA66C6A00CE61C2 /* icon80.png */,
 				D4087D201AA66C6A00CE61C2 /* icon120.png */,
@@ -377,6 +380,7 @@
 				D4087D211AA66C6A00CE61C2 /* icon80.png in Resources */,
 				D4B2AAB51AC59338000C2366 /* icon2-80.png in Resources */,
 				D4406E001AACAC8900D2D584 /* customer_support-104.png in Resources */,
+				D4F8AD1F1AD5886000CD5F8A /* icon1024copy.jpg in Resources */,
 				E67160D11AA0DFAA007A970D /* Main.storyboard in Resources */,
 				D4087D221AA66C6A00CE61C2 /* icon120.png in Resources */,
 				D4B2AAB71AC59338000C2366 /* icon2-180.png in Resources */,
