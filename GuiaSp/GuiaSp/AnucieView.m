@@ -75,15 +75,16 @@
 
 - (IBAction)enviar:(id)sender {
     
-    UIAlertView *confirmacaoAnucio = [[UIAlertView alloc] initWithTitle:@"GuiaSP" message:@"Obrigado por anunciar conosco." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    UIAlertView *confirmacaoAnucio = [[UIAlertView alloc] initWithTitle:@"GuiaSP Alerta" message:@"Você não está logado no mail, Entre em contato através do endereço guiaspanuncio@gmail.com" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
-    MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
-    mailCont.mailComposeDelegate = self;
+
     
     if([MFMailComposeViewController canSendMail]) {
     
         NSString *messageBody;
-        
+      
+        MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
+        mailCont.mailComposeDelegate = self;
 //        
 //        if ((text2.text ==nil)&&(text1.text==nil)) {
 //            return;
