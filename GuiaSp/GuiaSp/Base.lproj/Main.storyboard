@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -1316,6 +1316,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vDG-ub-caE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ZyR-6S-rxr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1024copy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b3z-RA-6kP">
@@ -1347,9 +1348,6 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="132" y="457" width="137" height="32"/>
-                                </variation>
                                 <connections>
                                     <action selector="enviar:" destination="B3i-1Y-J6Q" eventType="touchUpInside" id="1vZ-zz-ciE"/>
                                     <action selector="enviar:" destination="FmO-9N-lfA" eventType="touchUpInside" id="ApK-Ce-D6d"/>
@@ -1368,8 +1366,7 @@
                                         <exclude reference="aZk-Kh-SCL"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="42" y="312" width="316" height="84"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="aZk-Kh-SCL"/>
                                     </mask>
@@ -1392,12 +1389,12 @@
                                 <exclude reference="I0n-Ne-uTV"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="21w-FA-j0n"/>
-                                <exclude reference="UGh-Pr-cJB"/>
                                 <exclude reference="JFA-DN-hDX"/>
                                 <exclude reference="oVU-V0-OUL"/>
                                 <exclude reference="hd5-7c-mVn"/>
                                 <exclude reference="lzD-j5-wri"/>
+                                <exclude reference="21w-FA-j0n"/>
+                                <exclude reference="UGh-Pr-cJB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1407,12 +1404,12 @@
                                 <include reference="I0n-Ne-uTV"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="21w-FA-j0n"/>
-                                <include reference="UGh-Pr-cJB"/>
                                 <include reference="JFA-DN-hDX"/>
                                 <include reference="oVU-V0-OUL"/>
                                 <include reference="hd5-7c-mVn"/>
                                 <include reference="lzD-j5-wri"/>
+                                <include reference="21w-FA-j0n"/>
+                                <include reference="UGh-Pr-cJB"/>
                             </mask>
                         </variation>
                     </view>
