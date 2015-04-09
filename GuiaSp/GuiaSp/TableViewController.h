@@ -14,4 +14,5 @@
 @property NSMutableArray *objetos;
 @property LocalizationManager *locMan;
 @property NSString *categoria;
+@property UIActivityIndicatorView *spinner;
 @end

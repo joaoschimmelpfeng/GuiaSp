@@ -72,6 +72,37 @@
 }
 
 
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+   
+    
+    UIAlertView *confirma = [[UIAlertView alloc] initWithTitle:@"GuiaSP" message:@"Obrigado, email enviado com sucesso!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    UIAlertView *erro = [[UIAlertView alloc] initWithTitle:@"GuiaSP Alerta" message:@"Ocorreu um erro no envio!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+
+    switch (result) {
+        case MFMailComposeResultSent:
+
+            [confirma show];
+
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"You saved a draft of this email");
+            break;
+        case MFMailComposeResultCancelled:
+            NSLog(@"You cancelled sending this email.");
+            break;
+        case MFMailComposeResultFailed:
+            
+            [erro show];
+            break;
+        default:
+            NSLog(@"An error occurred when trying to compose this email");
+            break;
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 
 - (IBAction)enviar:(id)sender {
     
@@ -97,14 +128,14 @@
         [mailCont setToRecipients:[NSArray arrayWithObject:@"guiaspanuncio@gmail.com"]];
         [mailCont setMessageBody:messageBody isHTML:NO];
         [self presentViewController:mailCont animated:YES completion:nil];
-  
+        
     }else{
         
      [confirmacaoAnucio show];
         
     }
     
-    
+
     
 //    [confirmacaoAnucio show];
 //    text1.text =@"";

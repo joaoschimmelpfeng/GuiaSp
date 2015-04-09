@@ -13,14 +13,29 @@
 #import <Parse/Parse.h>
 
 @interface TableViewController ()
+{
+    UIView *viewSub;
+}
 
 @end
 
 @implementation TableViewController
-@synthesize objetos,categoria,locMan;
+@synthesize objetos,categoria,locMan,spinner;
 
 - (void)viewDidLoad
 {
+    viewSub = [[UIView alloc]init];
+    [viewSub setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
+    viewSub.frame = self.view.frame;
+    [self.view addSubview:viewSub];
+    
+    spinner = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [spinner setCenter:viewSub.center];
+    [viewSub addSubview:spinner];
+    [spinner startAnimating];
+    
+    
+    
     locMan = [LocalizationManager instance];
     objetos = [[NSMutableArray alloc] init];
     
@@ -36,9 +51,10 @@
       }
      }
     }];
-    
+
     NSLog(@"%i",[objetos count]);
     [super viewDidLoad];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,6 +78,10 @@
 {
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"celula" forIndexPath:indexPath];
     [cell update:[objetos objectAtIndex:[indexPath row]]];
+    [spinner stopAnimating];
+    [spinner hidesWhenStopped];
+    [spinner removeFromSuperview];
+
     return cell;
 }
 
