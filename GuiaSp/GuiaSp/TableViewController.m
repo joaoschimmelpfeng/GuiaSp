@@ -81,7 +81,7 @@
     [spinner stopAnimating];
     [spinner hidesWhenStopped];
     [spinner removeFromSuperview];
-
+    [viewSub removeFromSuperview];
     return cell;
 }
 
