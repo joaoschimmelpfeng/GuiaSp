@@ -1,0 +1,42 @@
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "2h3-QE-LhF"; */
+"2h3-QE-LhF.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUINavigationItem"; title = "GuiaSP"; ObjectID = "Gbc-TI-mzT"; */
+"Gbc-TI-mzT.title" = "GuiaSP";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "KXM-kG-G2F"; */
+"KXM-kG-G2F.text" = "Label";
+
+/* Class = "IBUISegmentedControl"; SaZ-DD-ATH.segmentTitles[0] = "Mapa"; ObjectID = "SaZ-DD-ATH"; */
+"SaZ-DD-ATH.segmentTitles[0]" = "Mapa";
+
+/* Class = "IBUISegmentedControl"; SaZ-DD-ATH.segmentTitles[1] = "Satelite"; ObjectID = "SaZ-DD-ATH"; */
+"SaZ-DD-ATH.segmentTitles[1]" = "Satelite";
+
+/* Class = "IBUISegmentedControl"; SaZ-DD-ATH.segmentTitles[2] = "Híbrido"; ObjectID = "SaZ-DD-ATH"; */
+"SaZ-DD-ATH.segmentTitles[2]" = "Híbrido";
+
+/* Class = "IBUINavigationItem"; title = "GuiaSP"; ObjectID = "SdT-GD-qmt"; */
+"SdT-GD-qmt.title" = "GuiaSP";
+
+/* Class = "IBUINavigationItem"; title = "GuiaSP"; ObjectID = "Wpw-2y-Dd3"; */
+"Wpw-2y-Dd3.title" = "GuiaSP";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Xy5-Vm-f2V"; */
+"Xy5-Vm-f2V.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "aES-Nx-xEb"; */
+"aES-Nx-xEb.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "gtt-zC-jWK"; */
+"gtt-zC-jWK.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "hCE-Tq-rh4"; */
+"hCE-Tq-rh4.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "pEH-HZ-IIj"; */
+"pEH-HZ-IIj.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "tF0-b4-dIw"; */
+"tF0-b4-dIw.text" = "Label";

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon1024copy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3VM-Xa-ub8">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="198" id="B3v-XM-UUV">
+                            <variation key="heightClass=regular-widthClass=compact" constant="240"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="234" id="cNO-eD-SbY">
+                            <variation key="heightClass=regular-widthClass=compact" constant="280"/>
+                        </constraint>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="B3v-XM-UUV"/>
+                            <exclude reference="cNO-eD-SbY"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="B3v-XM-UUV"/>
+                            <include reference="cNO-eD-SbY"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8Y-Jd-epD">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="21"/>
+                    <color key="textColor" red="0.56862745098039214" green="0.61176470588235299" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="São" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmG-HX-aX7">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="42"/>
+                    <color key="textColor" red="0.60392156862745094" green="0.64313725490196083" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hu8-aq-12C">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90.5" id="Hm8-cd-Q4m">
+                            <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="126.5" id="SpJ-SD-xXw">
+                            <variation key="heightClass=regular-widthClass=compact" constant="180"/>
+                        </constraint>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="42"/>
+                    <color key="textColor" red="0.56862745098039214" green="0.61176470588235299" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Hm8-cd-Q4m"/>
+                            <exclude reference="SpJ-SD-xXw"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Hm8-cd-Q4m"/>
+                            <include reference="SpJ-SD-xXw"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Hu8-aq-12C" secondAttribute="centerX" constant="-60" id="4fc-pd-1aU">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-25"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="K8Y-Jd-epD" secondAttribute="centerX" id="AMR-HN-GDU">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="3VM-Xa-ub8" secondAttribute="centerY" id="I3u-nF-m0n">
+                    <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="Hu8-aq-12C" secondAttribute="centerY" constant="-150" id="Zas-9t-Yea">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-170"/>
+                </constraint>
+                <constraint firstAttribute="centerX" secondItem="3VM-Xa-ub8" secondAttribute="centerX" id="fIp-oL-dlf"/>
+                <constraint firstAttribute="centerX" secondItem="OmG-HX-aX7" secondAttribute="centerX" constant="-40" id="ifc-uj-54M">
+                    <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="OmG-HX-aX7" secondAttribute="centerY" constant="-95" id="t5x-P9-ee2">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-140"/>
+                </constraint>
+                <constraint firstAttribute="centerY" secondItem="K8Y-Jd-epD" secondAttribute="centerY" id="zLQ-xF-GbE">
+                    <variation key="heightClass=regular-widthClass=compact" constant="-80"/>
+                </constraint>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="3VM-Xa-ub8"/>
+                    <exclude reference="K8Y-Jd-epD"/>
+                    <exclude reference="OmG-HX-aX7"/>
+                    <exclude reference="Hu8-aq-12C"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="I3u-nF-m0n"/>
+                    <exclude reference="fIp-oL-dlf"/>
+                    <exclude reference="AMR-HN-GDU"/>
+                    <exclude reference="zLQ-xF-GbE"/>
+                    <exclude reference="ifc-uj-54M"/>
+                    <exclude reference="t5x-P9-ee2"/>
+                    <exclude reference="4fc-pd-1aU"/>
+                    <exclude reference="Zas-9t-Yea"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="3VM-Xa-ub8"/>
+                    <include reference="K8Y-Jd-epD"/>
+                    <include reference="OmG-HX-aX7"/>
+                    <include reference="Hu8-aq-12C"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="I3u-nF-m0n"/>
+                    <include reference="fIp-oL-dlf"/>
+                    <include reference="AMR-HN-GDU"/>
+                    <include reference="zLQ-xF-GbE"/>
+                    <include reference="ifc-uj-54M"/>
+                    <include reference="t5x-P9-ee2"/>
+                    <include reference="4fc-pd-1aU"/>
+                    <include reference="Zas-9t-Yea"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="392" y="521"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon1024copy.jpg" width="1024" height="1024"/>
+    </resources>
+</document>

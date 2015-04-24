@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  GuiaSp
+
+  Created by João Vitor dos Santos Schimmelpfeng on 02/03/15.
+  Copyright (c) 2015 João Vitor dos Santos Schimmelpfeng. All rights reserved.
+*/
+"titulo" = "tituloPt";
+"price" = "Preço";
+"operation" = "Funcionamento";
+"map" = "Mapa";
+"satelite" = "Satelite";
+"hybrid" = "Hibrido";
+"museum" = "Museu";
+"theater" = "Teatro";
