@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -102,40 +102,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-dR-vHW">
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eqd-9N-Gtl">
+                                <rect key="frame" x="280" y="282" width="39" height="37"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-dR-vHW">
                                 <rect key="frame" x="16" y="69" width="568" height="275"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eqd-9N-Gtl">
-                                        <rect key="frame" x="265" y="219" width="39" height="37"/>
-                                    </pageControl>
-                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="eqd-9N-Gtl" secondAttribute="bottom" constant="20" id="3G2-ab-tHR"/>
                                     <constraint firstAttribute="width" secondItem="4L6-dR-vHW" secondAttribute="height" multiplier="184:89" id="5Zi-LF-QEc"/>
-                                    <constraint firstAttribute="bottom" secondItem="eqd-9N-Gtl" secondAttribute="bottom" constant="19" id="5lV-Yf-NGs"/>
-                                    <constraint firstAttribute="centerY" secondItem="eqd-9N-Gtl" secondAttribute="centerY" constant="-100" id="ABQ-3W-RlS"/>
                                     <constraint firstAttribute="width" constant="368" id="Flh-lf-E0o"/>
-                                    <constraint firstItem="eqd-9N-Gtl" firstAttribute="top" secondItem="4L6-dR-vHW" secondAttribute="top" priority="600" constant="219" id="XaX-RC-Zhn"/>
-                                    <constraint firstAttribute="bottom" secondItem="eqd-9N-Gtl" secondAttribute="bottom" constant="19" id="bOs-gI-aXS"/>
-                                    <constraint firstAttribute="centerX" secondItem="eqd-9N-Gtl" secondAttribute="centerX" id="gei-3U-K5C"/>
-                                    <constraint firstAttribute="bottom" secondItem="eqd-9N-Gtl" secondAttribute="bottom" constant="20" id="jW3-Fm-ks5"/>
                                     <constraint firstAttribute="height" constant="227" id="jya-JK-nzY"/>
-                                    <constraint firstAttribute="bottom" secondItem="eqd-9N-Gtl" secondAttribute="bottom" constant="18" id="kJv-lo-1Yv"/>
-                                    <constraint firstAttribute="bottom" secondItem="eqd-9N-Gtl" secondAttribute="bottom" constant="19" id="mrW-1C-fLg"/>
-                                    <constraint firstAttribute="centerX" secondItem="eqd-9N-Gtl" secondAttribute="centerX" id="rTg-9g-V7b"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Flh-lf-E0o"/>
                                         <exclude reference="jya-JK-nzY"/>
-                                        <exclude reference="3G2-ab-tHR"/>
-                                        <exclude reference="ABQ-3W-RlS"/>
-                                        <exclude reference="bOs-gI-aXS"/>
-                                        <exclude reference="jW3-Fm-ks5"/>
-                                        <exclude reference="kJv-lo-1Yv"/>
-                                        <exclude reference="mrW-1C-fLg"/>
-                                        <exclude reference="rTg-9g-V7b"/>
                                     </mask>
+                                </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="16" y="69" width="0.0" height="0.0"/>
                                 </variation>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9T-ck-Mxf">
@@ -173,6 +157,9 @@
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                            <rect key="frame" x="364" y="56" width="40" height="21"/>
+                                        </variation>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="K1h-iy-jd1">
                                         <rect key="frame" x="161" y="133" width="281" height="128"/>
@@ -226,6 +213,12 @@
                                         <exclude reference="h9A-dD-iGe"/>
                                         <exclude reference="vbk-iR-CPr"/>
                                     </mask>
+                                </variation>
+                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="16" y="72" width="568" height="188"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="16" y="72" width="768" height="188"/>
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZc-k7-TgL">

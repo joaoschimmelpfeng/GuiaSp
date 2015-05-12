@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DY0-cX-6fa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -158,25 +158,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-dR-vHW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="360" id="Flh-lf-E0o"/>
-                                    <constraint firstAttribute="height" constant="227" id="jya-JK-nzY"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Flh-lf-E0o"/>
-                                        <exclude reference="jya-JK-nzY"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Flh-lf-E0o"/>
-                                        <include reference="jya-JK-nzY"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="eqd-9N-Gtl">
                                 <rect key="frame" x="-19" y="-18" width="39" height="37"/>
                             </pageControl>
@@ -417,6 +398,25 @@
                                     </mask>
                                 </variation>
                             </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4L6-dR-vHW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="Flh-lf-E0o"/>
+                                    <constraint firstAttribute="height" constant="227" id="jya-JK-nzY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Flh-lf-E0o"/>
+                                        <exclude reference="jya-JK-nzY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Flh-lf-E0o"/>
+                                        <include reference="jya-JK-nzY"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="4L6-dR-vHW" firstAttribute="trailing" secondItem="3II-hc-UE5" secondAttribute="trailingMargin" id="3lZ-h1-P9q"/>
@@ -438,9 +438,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="4L6-dR-vHW"/>
                                 <exclude reference="eqd-9N-Gtl"/>
                                 <exclude reference="Tfc-ss-ud4"/>
+                                <exclude reference="4L6-dR-vHW"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="fif-iN-yrp"/>
@@ -459,9 +459,9 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="4L6-dR-vHW"/>
                                 <include reference="eqd-9N-Gtl"/>
                                 <include reference="Tfc-ss-ud4"/>
+                                <include reference="4L6-dR-vHW"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="fif-iN-yrp"/>

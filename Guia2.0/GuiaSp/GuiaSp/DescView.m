@@ -11,7 +11,7 @@
 #import "LocalizationManager.h"
 
 @interface DescView ()
-@property (weak, nonatomic) IBOutlet UIView *scrollContentView;
+//@property (weak, nonatomic) IBOutlet UIView *scrollContentView;
 @end
 
 @implementation DescView
@@ -19,7 +19,8 @@
 @synthesize dados,nome,desc,scrollImages,funcionamento,preco,locMan,img1,img2,img3,scrollContent,latitude,longitude;
 
 //ScrollView
--(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
     int page = scrollImages.contentOffset.x / scrollView.frame.size.width;
     
     pageImages.currentPage = page;
@@ -33,7 +34,7 @@
     
     //Imagens do Scrollview.
     scrollImages.delegate = self;
-    scrollImages.contentSize = CGSizeMake(360*3, 227);
+    
     scrollImages.pagingEnabled = YES;
     
     pageImages.numberOfPages=3;
@@ -50,6 +51,8 @@
     UIImageView *view3 = [[UIImageView alloc] init];
     [view1 setImage:img3];
     [scrollImages addSubview:view3];
+    
+    scrollImages.contentSize = CGSizeMake(([UIScreen mainScreen].bounds.size.width *3)-32, 227);
     
     //banco de dados
     locMan = [LocalizationManager instance];
@@ -194,10 +197,10 @@
     
 // Update the page when more than 50% of the previous/next page is visible
     
-CGFloat pageWidth = self.scrollImages.frame.size.width;
-int page = floor((self.scrollImages.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    CGFloat pageWidth = self.scrollImages.frame.size.width;
+    int page = floor((self.scrollImages.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     
-self.pageImages.currentPage = page;
+    self.pageImages.currentPage = page;
     
     }
     
