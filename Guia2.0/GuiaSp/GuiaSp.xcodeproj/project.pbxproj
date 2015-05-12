@@ -195,7 +195,6 @@
 				D440364A1AAA2A4F0096A48D /* define_location-50.png */,
 				D44036461AAA22980096A48D /* near.png */,
 				D44036421AA95EE50096A48D /* reading_filled-32.png */,
-				D4A3B7CE1AE0583100D89183 /* Bolts.framework */,
 				D44036401AA95D190096A48D /* map_marker-32.png */,
 				D413231C1AA8E62F00C77C71 /* bar.png */,
 				D413231E1AA8E62F00C77C71 /* museum1.png */,
@@ -204,6 +203,7 @@
 				D4087D111AA64C4800CE61C2 /* icone.png */,
 				E6E60E641AA60EBE00DED4B3 /* libsqlite3.dylib */,
 				E6E60E621AA60EB300DED4B3 /* libz.dylib */,
+				D4A3B7CE1AE0583100D89183 /* Bolts.framework */,
 				D4FC295E1AC2407500350BFA /* MessageUI.framework */,
 				D4406E011AACF0F800D2D584 /* iAd.framework */,
 				E6E60E601AA60EA300DED4B3 /* SystemConfiguration.framework */,
@@ -567,11 +567,12 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GuiaSp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GuiaSp/GuiaSp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				bla = "";
 			};
 			name = Debug;
@@ -587,10 +588,11 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GuiaSp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GuiaSp/GuiaSp-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				bla = "";
 			};
 			name = Release;
